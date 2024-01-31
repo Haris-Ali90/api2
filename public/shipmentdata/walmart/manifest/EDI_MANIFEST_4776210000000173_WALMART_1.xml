@@ -1,0 +1,3960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transmission xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="AmazonInternalTransportationMessaging.xsd"
+		sendingPartyID="WALMART"
+		receivingPartyID="477621"
+		transmissionCreationDate="2022-12-23T16:35:11"
+		transmissionSchemaVersionNumber="1.0">
+	<message messageType="WALMART_MFT">
+			<manifestHeader>
+				<manifestCreateDateTime>2022-12-23T16:35:11</manifestCreateDateTime>
+				<carrierInternalID>477621</carrierInternalID>
+				<shipmentMethod>
+					<walmartTechnicalName></walmartTechnicalName>
+				</shipmentMethod>
+				<manifestNumber>4776210000000173</manifestNumber>
+				<carrierAccountID>477621</carrierAccountID>
+				<carrierManifestID></carrierManifestID>
+				<shipmentDate>2022-12-23T16:35:11</shipmentDate>
+				<currencyCode>CAD</currencyCode>
+				<shipFromAddress AddressType="SHIP_FROM">
+					<name>WALMART.CA</name>
+					<addressLine1>233 MADILL BLVD    </addressLine1>
+					<addressLine2></addressLine2>
+					<addressLine3></addressLine3>
+					<city>MISSISSAUGA</city>
+					<stateChoice>
+						<stateProvince>ON</stateProvince>
+					</stateChoice>
+					<zip>L5W1Y6</zip>
+					<countryCode>CA</countryCode>
+					<countryName>Canada</countryName>
+				</shipFromAddress>
+				<shipperInformation>
+					<walmartTaxID></walmartTaxID>
+				</shipperInformation>
+				<prepaidCollect>PREPAID</prepaidCollect>
+			</manifestHeader>
+			<manifestDetail>
+				<shipmentDetail>
+					<customerOrderNumber>556224700282801</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>MANDEEP KAUR</name>
+						<phone>4169302005</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>45 REGIS CIR NULL    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>BRAMPTON</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L6P1Z4</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002857229</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">11.35</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">11.35</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">80.0</lengthValue>
+							<heightValue unitOfMeasure="CM">44.0</heightValue>
+							<widthValue unitOfMeasure="CM">80.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002857229-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>MANDEEP KAUR</name>
+									<phone>4169302005</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>45 REGIS CIR NULL    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6P1Z4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">8.43</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002857229-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>MANDEEP KAUR</name>
+									<phone>4169302005</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>45 REGIS CIR NULL    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6P1Z4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">8.43</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>923227200333301</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>KUBILAY KAYA</name>
+						<phone>6478068572</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>306-551 EGLINT AVE E    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>TORONTO</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M4P1N8</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002857330</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">3.28</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">3.28</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">42.0</lengthValue>
+							<heightValue unitOfMeasure="CM">30.0</heightValue>
+							<widthValue unitOfMeasure="CM">40.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002857330-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>KUBILAY KAYA</name>
+									<phone>6478068572</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>306-551 EGLINT AVE E    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>TORONTO</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M4P1N8</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">2.28</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">21.0</lengthValue>
+									<heightValue unitOfMeasure="CM">15.0</heightValue>
+									<widthValue unitOfMeasure="CM">20.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002857330-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>KUBILAY KAYA</name>
+									<phone>6478068572</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>306-551 EGLINT AVE E    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>TORONTO</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M4P1N8</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">2.28</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">21.0</lengthValue>
+									<heightValue unitOfMeasure="CM">15.0</heightValue>
+									<widthValue unitOfMeasure="CM">20.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>532222400262802</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>ANAM RAHMAN KHAN</name>
+						<phone>6477689787</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>25-1750 CREEK WAY    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>BURLINGTON</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L7L7E2</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002857431</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">1.55</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">1.55</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+							<heightValue unitOfMeasure="CM">21.0</heightValue>
+							<widthValue unitOfMeasure="CM">35.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002857431-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>ANAM RAHMAN KHAN</name>
+									<phone>6477689787</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>25-1750 CREEK WAY    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BURLINGTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L7L7E2</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.45</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">19.0</lengthValue>
+									<heightValue unitOfMeasure="CM">19.0</heightValue>
+									<widthValue unitOfMeasure="CM">19.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002857431-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>ANAM RAHMAN KHAN</name>
+									<phone>6477689787</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>25-1750 CREEK WAY    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BURLINGTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L7L7E2</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.45</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">19.0</lengthValue>
+									<heightValue unitOfMeasure="CM">19.0</heightValue>
+									<widthValue unitOfMeasure="CM">19.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>921229500008301</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>LUBNA HUSSAIN</name>
+						<phone>6476878674</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>38 STEPHANIE AVE    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>BRAMPTON</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L6Y0R8</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002857532</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">6.01</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">6.01</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">54.0</lengthValue>
+							<heightValue unitOfMeasure="CM">40.0</heightValue>
+							<widthValue unitOfMeasure="CM">52.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002857532-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>LUBNA HUSSAIN</name>
+									<phone>6476878674</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>38 STEPHANIE AVE    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6Y0R8</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">5.01</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">27.0</lengthValue>
+									<heightValue unitOfMeasure="CM">20.0</heightValue>
+									<widthValue unitOfMeasure="CM">26.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002857532-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>LUBNA HUSSAIN</name>
+									<phone>6476878674</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>38 STEPHANIE AVE    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6Y0R8</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">5.01</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">27.0</lengthValue>
+									<heightValue unitOfMeasure="CM">20.0</heightValue>
+									<widthValue unitOfMeasure="CM">26.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>923227200210101</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>GABRIEL LASCUT</name>
+						<phone>4163563686</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>48 WHEATFIELD RD    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>ETOBICOKE</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M8V2P6</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002857633</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">1.35</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">1.35</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">51.0</lengthValue>
+							<heightValue unitOfMeasure="CM">28.0</heightValue>
+							<widthValue unitOfMeasure="CM">42.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002857633-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>GABRIEL LASCUT</name>
+									<phone>4163563686</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>48 WHEATFIELD RD    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>ETOBICOKE</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M8V2P6</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.74</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">21.0</lengthValue>
+									<heightValue unitOfMeasure="CM">21.0</heightValue>
+									<widthValue unitOfMeasure="CM">21.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002857633-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>GABRIEL LASCUT</name>
+									<phone>4163563686</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>48 WHEATFIELD RD    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>ETOBICOKE</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M8V2P6</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.74</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">21.0</lengthValue>
+									<heightValue unitOfMeasure="CM">21.0</heightValue>
+									<widthValue unitOfMeasure="CM">21.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>921228800176301</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>CECILIA ANDREW</name>
+						<phone>4372303731</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>308-75 EMMETT AVE    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>YORK</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M6M5A7</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002857734</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">7.97</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">7.97</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">75.0</lengthValue>
+							<heightValue unitOfMeasure="CM">32.0</heightValue>
+							<widthValue unitOfMeasure="CM">65.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002857734-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>CECILIA ANDREW</name>
+									<phone>4372303731</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>308-75 EMMETT AVE    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>YORK</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M6M5A7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">5.96</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">35.0</lengthValue>
+									<heightValue unitOfMeasure="CM">10.0</heightValue>
+									<widthValue unitOfMeasure="CM">25.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002857734-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>CECILIA ANDREW</name>
+									<phone>4372303731</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>308-75 EMMETT AVE    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>YORK</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M6M5A7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">5.96</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">35.0</lengthValue>
+									<heightValue unitOfMeasure="CM">10.0</heightValue>
+									<widthValue unitOfMeasure="CM">25.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>556224100470201</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>RAN YE</name>
+						<phone>6472312060</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>10 SHAWNEE CIR    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>NORTH YORK</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M2H2K5</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002857835</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">5.83</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">5.83</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">76.0</lengthValue>
+							<heightValue unitOfMeasure="CM">22.0</heightValue>
+							<widthValue unitOfMeasure="CM">62.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">1</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002857835-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>RAN YE</name>
+									<phone>6472312060</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>10 SHAWNEE CIR    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>NORTH YORK</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M2H2K5</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">2.0</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">38.0</lengthValue>
+									<heightValue unitOfMeasure="CM">11.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">1</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922229300215001</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>SADIA TAHIR</name>
+						<phone>2899287484</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>513 JUNEBERRY CRT    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>MILTON</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L9E1M7</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002857936</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">20.1</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">20.1</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">86.0</lengthValue>
+							<heightValue unitOfMeasure="CM">30.0</heightValue>
+							<widthValue unitOfMeasure="CM">72.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">3</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002857936-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SADIA TAHIR</name>
+									<phone>2899287484</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>513 JUNEBERRY CRT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MILTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L9E1M7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.37</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">23.0</lengthValue>
+									<heightValue unitOfMeasure="CM">4.0</heightValue>
+									<widthValue unitOfMeasure="CM">16.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002857936-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SADIA TAHIR</name>
+									<phone>2899287484</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>513 JUNEBERRY CRT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MILTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L9E1M7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.37</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">23.0</lengthValue>
+									<heightValue unitOfMeasure="CM">4.0</heightValue>
+									<widthValue unitOfMeasure="CM">16.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>3</packageID>
+									<trackingID>JYWM12225002857936-03</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SADIA TAHIR</name>
+									<phone>2899287484</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>513 JUNEBERRY CRT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MILTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L9E1M7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.37</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">23.0</lengthValue>
+									<heightValue unitOfMeasure="CM">4.0</heightValue>
+									<widthValue unitOfMeasure="CM">16.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">3</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>556224400317501</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>NATALIE GRIECO</name>
+						<phone>4168312392</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>512-11 THORNCLIFFE PARK DR ENTRY CODE 113    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>EAST YORK</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M4H1P3</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002858028</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">2.83</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">2.83</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">70.0</lengthValue>
+							<heightValue unitOfMeasure="CM">50.0</heightValue>
+							<widthValue unitOfMeasure="CM">62.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002858028-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>NATALIE GRIECO</name>
+									<phone>4168312392</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>512-11 THORNCLIFFE PARK DR ENTRY CODE 113    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>EAST YORK</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M4H1P3</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.83</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">35.0</lengthValue>
+									<heightValue unitOfMeasure="CM">25.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002858028-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>NATALIE GRIECO</name>
+									<phone>4168312392</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>512-11 THORNCLIFFE PARK DR ENTRY CODE 113    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>EAST YORK</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M4H1P3</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.83</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">35.0</lengthValue>
+									<heightValue unitOfMeasure="CM">25.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922229000167101</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>SADIA TAHIR</name>
+						<phone>2899287484</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>513 JUNEBERRY CRT    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>MILTON</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L9E1M7</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002858129</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">23.74</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">23.74</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">80.0</lengthValue>
+							<heightValue unitOfMeasure="CM">44.0</heightValue>
+							<widthValue unitOfMeasure="CM">80.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002858129-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SADIA TAHIR</name>
+									<phone>2899287484</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>513 JUNEBERRY CRT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MILTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L9E1M7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">20.18</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002858129-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SADIA TAHIR</name>
+									<phone>2899287484</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>513 JUNEBERRY CRT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MILTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L9E1M7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">20.18</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922229100016401</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>JULIA IP</name>
+						<phone>6473410097</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>35 HOLLYWOOD AVE SUITE 906    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>NORTH YORK</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M2N0A9</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002858230</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">10.57</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">10.57</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">80.0</lengthValue>
+							<heightValue unitOfMeasure="CM">44.0</heightValue>
+							<widthValue unitOfMeasure="CM">80.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002858230-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>JULIA IP</name>
+									<phone>6473410097</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>35 HOLLYWOOD AVE SUITE 906    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>NORTH YORK</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M2N0A9</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">8.57</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002858230-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>JULIA IP</name>
+									<phone>6473410097</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>35 HOLLYWOOD AVE SUITE 906    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>NORTH YORK</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M2N0A9</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">8.57</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>916227400544601</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>DAVINDER PANDHER</name>
+						<phone>4168370117</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>3 RIVA RIDGE DR    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>BRAMPTON</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L6P1Y6</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002858331</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">2.2</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">2.2</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">39.0</lengthValue>
+							<heightValue unitOfMeasure="CM">20.0</heightValue>
+							<widthValue unitOfMeasure="CM">34.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002858331-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>DAVINDER PANDHER</name>
+									<phone>4168370117</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>3 RIVA RIDGE DR    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6P1Y6</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.2</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">18.0</lengthValue>
+									<heightValue unitOfMeasure="CM">18.0</heightValue>
+									<widthValue unitOfMeasure="CM">18.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002858331-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>DAVINDER PANDHER</name>
+									<phone>4168370117</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>3 RIVA RIDGE DR    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6P1Y6</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.2</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">18.0</lengthValue>
+									<heightValue unitOfMeasure="CM">18.0</heightValue>
+									<widthValue unitOfMeasure="CM">18.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922228800094101</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>JANA BERGHOUWER</name>
+						<phone>2898901333</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>11 STEBROOK CRES    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>GEORGETOWN</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L7G6E4</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002858432</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">1.37</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">1.37</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">66.0</lengthValue>
+							<heightValue unitOfMeasure="CM">12.0</heightValue>
+							<widthValue unitOfMeasure="CM">51.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002858432-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>JANA BERGHOUWER</name>
+									<phone>2898901333</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>11 STEBROOK CRES    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>GEORGETOWN</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L7G6E4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.0</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">45.0</lengthValue>
+									<heightValue unitOfMeasure="CM">10.0</heightValue>
+									<widthValue unitOfMeasure="CM">35.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002858432-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>JANA BERGHOUWER</name>
+									<phone>2898901333</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>11 STEBROOK CRES    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>GEORGETOWN</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L7G6E4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.0</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">45.0</lengthValue>
+									<heightValue unitOfMeasure="CM">10.0</heightValue>
+									<widthValue unitOfMeasure="CM">35.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922229000126701</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>LALITA DUA</name>
+						<phone>6479655158</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>346 FLAGSTE TERR    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>SCARBOROUGH</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M1C2X6</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002858533</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">17.58</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">17.58</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">80.0</lengthValue>
+							<heightValue unitOfMeasure="CM">44.0</heightValue>
+							<widthValue unitOfMeasure="CM">80.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002858533-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>LALITA DUA</name>
+									<phone>6479655158</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>346 FLAGSTE TERR    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>SCARBOROUGH</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M1C2X6</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">12.25</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002858533-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>LALITA DUA</name>
+									<phone>6479655158</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>346 FLAGSTE TERR    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>SCARBOROUGH</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M1C2X6</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">12.25</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>556224100416001</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>SURYAKANT GALCHAR</name>
+						<phone>6477411249</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>111-2 HEDGE END RD    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>SCARBOROUGH</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M1B5Z8</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002858634</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">13.55</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">13.55</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">80.0</lengthValue>
+							<heightValue unitOfMeasure="CM">44.0</heightValue>
+							<widthValue unitOfMeasure="CM">80.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002858634-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SURYAKANT GALCHAR</name>
+									<phone>6477411249</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>111-2 HEDGE END RD    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>SCARBOROUGH</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M1B5Z8</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">11.55</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002858634-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SURYAKANT GALCHAR</name>
+									<phone>6477411249</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>111-2 HEDGE END RD    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>SCARBOROUGH</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M1B5Z8</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">11.55</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922228800158301</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>RAJBIR DHANJU</name>
+						<phone>6477829154</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>10 HASLEMERE AVE    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>BRAMPTON</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L6W2X4</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002858735</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">9.65</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">9.65</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">76.0</lengthValue>
+							<heightValue unitOfMeasure="CM">22.0</heightValue>
+							<widthValue unitOfMeasure="CM">62.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002858735-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>RAJBIR DHANJU</name>
+									<phone>6477829154</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>10 HASLEMERE AVE    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6W2X4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">8.65</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">38.0</lengthValue>
+									<heightValue unitOfMeasure="CM">11.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002858735-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>RAJBIR DHANJU</name>
+									<phone>6477829154</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>10 HASLEMERE AVE    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6W2X4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">8.65</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">38.0</lengthValue>
+									<heightValue unitOfMeasure="CM">11.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922228800064201</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>SABA DAWOOD</name>
+						<phone>4164500746</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>30 GEORGE GRAY DR    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>BRAMPTON</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L6R4A3</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002858836</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">6.9</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">6.9</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">80.0</lengthValue>
+							<heightValue unitOfMeasure="CM">44.0</heightValue>
+							<widthValue unitOfMeasure="CM">80.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002858836-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SABA DAWOOD</name>
+									<phone>4164500746</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>30 GEORGE GRAY DR    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6R4A3</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">3.9</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002858836-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SABA DAWOOD</name>
+									<phone>4164500746</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>30 GEORGE GRAY DR    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6R4A3</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">3.9</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>556223900086301</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>YULIA KARABANOVA</name>
+						<phone>4168297973</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>1416-100 WINGARDEN CRT    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>SCARBOROUGH</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M1B2P4</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002858937</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">19.27</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">19.27</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">80.0</lengthValue>
+							<heightValue unitOfMeasure="CM">44.0</heightValue>
+							<widthValue unitOfMeasure="CM">80.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002858937-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>YULIA KARABANOVA</name>
+									<phone>4168297973</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>1416-100 WINGARDEN CRT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>SCARBOROUGH</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M1B2P4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">12.68</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002858937-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>YULIA KARABANOVA</name>
+									<phone>4168297973</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>1416-100 WINGARDEN CRT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>SCARBOROUGH</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M1B2P4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">12.68</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922228600045501</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>WEN RUAN</name>
+						<phone>6478663186</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>1001-75 SOUTH TOWN CENTRE BLVD    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>MARKHAM</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L6G0B3</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002859029</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">3.79</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">3.79</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">48.0</lengthValue>
+							<heightValue unitOfMeasure="CM">13.0</heightValue>
+							<widthValue unitOfMeasure="CM">35.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002859029-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>WEN RUAN</name>
+									<phone>6478663186</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>1001-75 SOUTH TOWN CENTRE BLVD    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MARKHAM</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6G0B3</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.71</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">18.0</lengthValue>
+									<heightValue unitOfMeasure="CM">7.0</heightValue>
+									<widthValue unitOfMeasure="CM">13.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002859029-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>WEN RUAN</name>
+									<phone>6478663186</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>1001-75 SOUTH TOWN CENTRE BLVD    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MARKHAM</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6G0B3</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.71</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">18.0</lengthValue>
+									<heightValue unitOfMeasure="CM">7.0</heightValue>
+									<widthValue unitOfMeasure="CM">13.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>556223800256101</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>SANDEEP SINGH</name>
+						<phone>4166247572</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>11 ROCKBROOK TRAIL    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>BRAMPTON</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L7A4H8</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002859130</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">3.41</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">3.41</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">76.0</lengthValue>
+							<heightValue unitOfMeasure="CM">22.0</heightValue>
+							<widthValue unitOfMeasure="CM">62.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002859130-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SANDEEP SINGH</name>
+									<phone>4166247572</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>11 ROCKBROOK TRAIL    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L7A4H8</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">2.41</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">38.0</lengthValue>
+									<heightValue unitOfMeasure="CM">11.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002859130-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SANDEEP SINGH</name>
+									<phone>4166247572</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>11 ROCKBROOK TRAIL    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L7A4H8</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">2.41</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">38.0</lengthValue>
+									<heightValue unitOfMeasure="CM">11.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>919229200170901</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>SOUMYAA SAHOO</name>
+						<phone>4379734340</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>UNIT - 615, 50 KAITTING TRAIL    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>OAKVILLE</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L6M5N3</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002859231</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">5.2</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">5.2</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">70.0</lengthValue>
+							<heightValue unitOfMeasure="CM">50.0</heightValue>
+							<widthValue unitOfMeasure="CM">62.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002859231-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SOUMYAA SAHOO</name>
+									<phone>4379734340</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>UNIT - 615, 50 KAITTING TRAIL    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>OAKVILLE</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6M5N3</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">4.2</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">35.0</lengthValue>
+									<heightValue unitOfMeasure="CM">25.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002859231-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SOUMYAA SAHOO</name>
+									<phone>4379734340</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>UNIT - 615, 50 KAITTING TRAIL    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>OAKVILLE</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6M5N3</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">4.2</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">35.0</lengthValue>
+									<heightValue unitOfMeasure="CM">25.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922228600060501</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>WAI SUM MONG</name>
+						<phone>6478872323</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>80 ELLERSLIE AVE NULL    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>NORTH YORK</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M2N1X8</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002859332</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">7.67</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">7.67</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">61.0</lengthValue>
+							<heightValue unitOfMeasure="CM">15.0</heightValue>
+							<widthValue unitOfMeasure="CM">47.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002859332-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>WAI SUM MONG</name>
+									<phone>6478872323</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>80 ELLERSLIE AVE NULL    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>NORTH YORK</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M2N1X8</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.37</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">23.0</lengthValue>
+									<heightValue unitOfMeasure="CM">4.0</heightValue>
+									<widthValue unitOfMeasure="CM">16.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002859332-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>WAI SUM MONG</name>
+									<phone>6478872323</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>80 ELLERSLIE AVE NULL    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>NORTH YORK</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M2N1X8</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.37</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">23.0</lengthValue>
+									<heightValue unitOfMeasure="CM">4.0</heightValue>
+									<widthValue unitOfMeasure="CM">16.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>544224600118201</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>SYED HUSSAINI</name>
+						<phone>6475271532</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>922 STEBRIDGE AVE    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>MISSISSAUGA</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L5V2L5</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002859433</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">16.96</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">16.96</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">80.0</lengthValue>
+							<heightValue unitOfMeasure="CM">44.0</heightValue>
+							<widthValue unitOfMeasure="CM">80.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002859433-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SYED HUSSAINI</name>
+									<phone>6475271532</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>922 STEBRIDGE AVE    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MISSISSAUGA</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L5V2L5</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">15.96</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002859433-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SYED HUSSAINI</name>
+									<phone>6475271532</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>922 STEBRIDGE AVE    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MISSISSAUGA</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L5V2L5</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">15.96</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922228500361001</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>SHENGWEI WANG</name>
+						<phone>4168990588</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>139 ZACHARY CRES    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>OAKVILLE</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L6H0W1</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002859534</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">2.0</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">2.0</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">90.0</lengthValue>
+							<heightValue unitOfMeasure="CM">20.0</heightValue>
+							<widthValue unitOfMeasure="CM">70.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002859534-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SHENGWEI WANG</name>
+									<phone>4168990588</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>139 ZACHARY CRES    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>OAKVILLE</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6H0W1</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.0</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">45.0</lengthValue>
+									<heightValue unitOfMeasure="CM">10.0</heightValue>
+									<widthValue unitOfMeasure="CM">35.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002859534-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SHENGWEI WANG</name>
+									<phone>4168990588</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>139 ZACHARY CRES    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>OAKVILLE</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6H0W1</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.0</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">45.0</lengthValue>
+									<heightValue unitOfMeasure="CM">10.0</heightValue>
+									<widthValue unitOfMeasure="CM">35.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922228700011901</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>ANGIE MCMAHON</name>
+						<phone>4168857576</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>604 VANDERBURGH DR    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>BURLINGTON</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L7T3W4</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002859635</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">2.09</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">2.09</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">49.0</lengthValue>
+							<heightValue unitOfMeasure="CM">25.0</heightValue>
+							<widthValue unitOfMeasure="CM">41.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002859635-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>ANGIE MCMAHON</name>
+									<phone>4168857576</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>604 VANDERBURGH DR    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BURLINGTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L7T3W4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.45</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">19.0</lengthValue>
+									<heightValue unitOfMeasure="CM">19.0</heightValue>
+									<widthValue unitOfMeasure="CM">19.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002859635-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>ANGIE MCMAHON</name>
+									<phone>4168857576</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>604 VANDERBURGH DR    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BURLINGTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L7T3W4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.45</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">19.0</lengthValue>
+									<heightValue unitOfMeasure="CM">19.0</heightValue>
+									<widthValue unitOfMeasure="CM">19.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>551224300134301</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>DIXI WEN</name>
+						<phone>4164548617</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>262 RIVERLANDS AVE    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>MARKHAM</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L6B0W2</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002859736</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">11.31</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">11.31</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">75.0</lengthValue>
+							<heightValue unitOfMeasure="CM">47.0</heightValue>
+							<widthValue unitOfMeasure="CM">71.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002859736-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>DIXI WEN</name>
+									<phone>4164548617</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>262 RIVERLANDS AVE    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MARKHAM</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6B0W2</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">9.31</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002859736-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>DIXI WEN</name>
+									<phone>4164548617</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>262 RIVERLANDS AVE    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MARKHAM</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6B0W2</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">9.31</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922228500006601</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>SHARON LAPOINTE</name>
+						<phone>4164396022</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>52 CARSLAKE CRESCENT    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>SCARBOROUGH</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M1J2A7</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12225002859837</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">12.57</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">12.57</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">138.0</lengthValue>
+							<heightValue unitOfMeasure="CM">56.0</heightValue>
+							<widthValue unitOfMeasure="CM">121.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">4</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12225002859837-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SHARON LAPOINTE</name>
+									<phone>4164396022</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>52 CARSLAKE CRESCENT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>SCARBOROUGH</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M1J2A7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.37</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">23.0</lengthValue>
+									<heightValue unitOfMeasure="CM">4.0</heightValue>
+									<widthValue unitOfMeasure="CM">16.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12225002859837-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SHARON LAPOINTE</name>
+									<phone>4164396022</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>52 CARSLAKE CRESCENT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>SCARBOROUGH</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M1J2A7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.37</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">23.0</lengthValue>
+									<heightValue unitOfMeasure="CM">4.0</heightValue>
+									<widthValue unitOfMeasure="CM">16.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>3</packageID>
+									<trackingID>JYWM12225002859837-03</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SHARON LAPOINTE</name>
+									<phone>4164396022</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>52 CARSLAKE CRESCENT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>SCARBOROUGH</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M1J2A7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.37</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">23.0</lengthValue>
+									<heightValue unitOfMeasure="CM">4.0</heightValue>
+									<widthValue unitOfMeasure="CM">16.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>4</packageID>
+									<trackingID>JYWM12225002859837-04</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SHARON LAPOINTE</name>
+									<phone>4164396022</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>52 CARSLAKE CRESCENT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>SCARBOROUGH</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M1J2A7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.37</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">23.0</lengthValue>
+									<heightValue unitOfMeasure="CM">4.0</heightValue>
+									<widthValue unitOfMeasure="CM">16.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">4</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>907229400157801</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>NUTAN NITIN CHANDANKHEDE</name>
+						<phone>4372272342</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>2520 EGLINT AVE W 1008    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>MISSISSAUGA</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L5M0Y4</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12235002856228</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">1.84</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">1.84</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">99.0</lengthValue>
+							<heightValue unitOfMeasure="CM">52.0</heightValue>
+							<widthValue unitOfMeasure="CM">78.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">3</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12235002856228-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>NUTAN NITIN CHANDANKHEDE</name>
+									<phone>4372272342</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>2520 EGLINT AVE W 1008    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MISSISSAUGA</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L5M0Y4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.62</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">31.0</lengthValue>
+									<heightValue unitOfMeasure="CM">35.0</heightValue>
+									<widthValue unitOfMeasure="CM">25.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12235002856228-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>NUTAN NITIN CHANDANKHEDE</name>
+									<phone>4372272342</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>2520 EGLINT AVE W 1008    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MISSISSAUGA</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L5M0Y4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.62</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">31.0</lengthValue>
+									<heightValue unitOfMeasure="CM">35.0</heightValue>
+									<widthValue unitOfMeasure="CM">25.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>3</packageID>
+									<trackingID>JYWM12235002856228-03</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>NUTAN NITIN CHANDANKHEDE</name>
+									<phone>4372272342</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>2520 EGLINT AVE W 1008    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MISSISSAUGA</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L5M0Y4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.62</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">31.0</lengthValue>
+									<heightValue unitOfMeasure="CM">35.0</heightValue>
+									<widthValue unitOfMeasure="CM">25.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">3</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>923227400103401</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>SHIJAN KOLOTH RAVEENDRAN</name>
+						<phone>4372357480</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>915-135 HILLCREST AVE    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>MISSISSAUGA</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L5B4B1</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12235002856329</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">1.26</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">1.26</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">60.0</lengthValue>
+							<heightValue unitOfMeasure="CM">12.0</heightValue>
+							<widthValue unitOfMeasure="CM">44.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12235002856329-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SHIJAN KOLOTH RAVEENDRAN</name>
+									<phone>4372357480</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>915-135 HILLCREST AVE    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MISSISSAUGA</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L5B4B1</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.13</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">30.0</lengthValue>
+									<heightValue unitOfMeasure="CM">6.0</heightValue>
+									<widthValue unitOfMeasure="CM">22.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12235002856329-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>SHIJAN KOLOTH RAVEENDRAN</name>
+									<phone>4372357480</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>915-135 HILLCREST AVE    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MISSISSAUGA</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L5B4B1</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">1.13</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">30.0</lengthValue>
+									<heightValue unitOfMeasure="CM">6.0</heightValue>
+									<widthValue unitOfMeasure="CM">22.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>907229400157801</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>NUTAN NITIN CHANDANKHEDE</name>
+						<phone>4372272342</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>2520 EGLINT AVE W 1008    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>MISSISSAUGA</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L5M0Y4</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12235002856531</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">1.84</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">1.84</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">70.0</lengthValue>
+							<heightValue unitOfMeasure="CM">50.0</heightValue>
+							<widthValue unitOfMeasure="CM">62.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">1</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12235002856531-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>NUTAN NITIN CHANDANKHEDE</name>
+									<phone>4372272342</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>2520 EGLINT AVE W 1008    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MISSISSAUGA</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L5M0Y4</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.62</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">35.0</lengthValue>
+									<heightValue unitOfMeasure="CM">25.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">1</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>556224100470201</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>RAN YE</name>
+						<phone>6472312060</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>10 SHAWNEE CIR    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>NORTH YORK</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M2H2K5</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12235002856632</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">5.83</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">5.83</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">103.0</lengthValue>
+							<heightValue unitOfMeasure="CM">28.0</heightValue>
+							<widthValue unitOfMeasure="CM">77.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">3</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12235002856632-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>RAN YE</name>
+									<phone>6472312060</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>10 SHAWNEE CIR    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>NORTH YORK</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M2H2K5</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">2.0</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">38.0</lengthValue>
+									<heightValue unitOfMeasure="CM">11.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12235002856632-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>RAN YE</name>
+									<phone>6472312060</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>10 SHAWNEE CIR    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>NORTH YORK</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M2H2K5</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">2.0</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">38.0</lengthValue>
+									<heightValue unitOfMeasure="CM">11.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>3</packageID>
+									<trackingID>JYWM12235002856632-03</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>RAN YE</name>
+									<phone>6472312060</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>10 SHAWNEE CIR    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>NORTH YORK</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M2H2K5</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">2.0</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">38.0</lengthValue>
+									<heightValue unitOfMeasure="CM">11.0</heightValue>
+									<widthValue unitOfMeasure="CM">31.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">3</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>557222500081101</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>VALERIE CROWE</name>
+						<phone>9057967255</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>56 VERITY CRT    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>BRAMPTON</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L6Y2L7</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12235002856935</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">16.31</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">16.31</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">80.0</lengthValue>
+							<heightValue unitOfMeasure="CM">44.0</heightValue>
+							<widthValue unitOfMeasure="CM">80.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12235002856935-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>VALERIE CROWE</name>
+									<phone>9057967255</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>56 VERITY CRT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6Y2L7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">14.53</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12235002856935-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>VALERIE CROWE</name>
+									<phone>9057967255</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>56 VERITY CRT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>BRAMPTON</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L6Y2L7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">14.53</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>923227200389801</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>CHAYA LAUTERPACHT</name>
+						<phone>4164190655</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>15 MORTIMER CRT    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>THORNHILL</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L4J2P7</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12235002857027</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">10.09</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">10.09</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">80.0</lengthValue>
+							<heightValue unitOfMeasure="CM">44.0</heightValue>
+							<widthValue unitOfMeasure="CM">80.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12235002857027-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>CHAYA LAUTERPACHT</name>
+									<phone>4164190655</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>15 MORTIMER CRT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>THORNHILL</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L4J2P7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">9.09</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12235002857027-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>CHAYA LAUTERPACHT</name>
+									<phone>4164190655</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>15 MORTIMER CRT    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>THORNHILL</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L4J2P7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">9.09</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">40.0</lengthValue>
+									<heightValue unitOfMeasure="CM">22.0</heightValue>
+									<widthValue unitOfMeasure="CM">40.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>922227400251301</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>NIVEDITA NIVEDITA</name>
+						<phone>6478795018</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>STE 3806-4070 CFEDERATI PKY BUZZ CODE 5222    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>MISSISSAUGA</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>L5B0E9</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12235002857128</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName></walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">1.76</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">1.76</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">46.0</lengthValue>
+							<heightValue unitOfMeasure="CM">21.0</heightValue>
+							<widthValue unitOfMeasure="CM">36.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">2</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<cartonID>
+									<packageID>1</packageID>
+									<trackingID>JYWM12235002857128-01</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>NIVEDITA NIVEDITA</name>
+									<phone>6478795018</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>STE 3806-4070 CFEDERATI PKY BUZZ CODE 5222    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MISSISSAUGA</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L5B0E9</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.64</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">11.0</lengthValue>
+									<heightValue unitOfMeasure="CM">11.0</heightValue>
+									<widthValue unitOfMeasure="CM">11.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+							<itemDetails>
+								<cartonID>
+									<packageID>2</packageID>
+									<trackingID>JYWM12235002857128-02</trackingID>
+								</cartonID>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>NIVEDITA NIVEDITA</name>
+									<phone>6478795018</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>STE 3806-4070 CFEDERATI PKY BUZZ CODE 5222    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>MISSISSAUGA</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>L5B0E9</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">0.64</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">11.0</lengthValue>
+									<heightValue unitOfMeasure="CM">11.0</heightValue>
+									<widthValue unitOfMeasure="CM">11.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">2</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+				<shipmentDetail>
+					<customerOrderNumber>552223000046701</customerOrderNumber>
+					<consigneeAddress AddressType="CONSIGNEE">
+						<name>PATRIZIA SAMSON</name>
+						<phone>6476420410</phone>
+						<email>test@clickpost.in</email>
+						<addressLine1>24 SHARBOT AVE, SCARBOROUGH, . M1H 1Y7    </addressLine1>
+						<addressLine2></addressLine2>
+						<addressLine3></addressLine3>
+						<city>TORONTO</city>
+						<stateChoice>
+							<stateProvince>ON</stateProvince>
+						</stateChoice>
+						<zip>M1H1Y7</zip>
+						<countryCode>CA</countryCode>
+						<countryName>Canada</countryName>
+						<contactPhone>+16479316176</contactPhone>
+					</consigneeAddress>
+					<shipmentPackageInfo>
+						<cartonID>
+							<encryptedShipmentID></encryptedShipmentID>
+							<packageID>1</packageID>
+							<trackingID>JYWM12221010732519</trackingID>
+						</cartonID>
+						<packageShipmentMethod>
+							<walmartTechnicalName>Walmart</walmartTechnicalName>
+						</packageShipmentMethod>
+						<commercialInvoiceDate></commercialInvoiceDate>
+						<scheduledDeliveryDate></scheduledDeliveryDate>
+						<shipmentPackageDeclaredGrossWeight>
+							<weightValue unitOfMeasure="LB">2.0</weightValue>
+						</shipmentPackageDeclaredGrossWeight>
+						<shipmentPackageActualGrossWeight>
+							<weightValue unitOfMeasure="LB">2.0</weightValue>
+						</shipmentPackageActualGrossWeight>
+						<shipmentPackageDimensions>
+							<lengthValue unitOfMeasure="CM">21.0</lengthValue>
+							<heightValue unitOfMeasure="CM">15.0</heightValue>
+							<widthValue unitOfMeasure="CM">20.0</widthValue>
+							<itemQuantity>
+								<quantity unitOfMeasure="EA">1</quantity>
+							</itemQuantity>
+						</shipmentPackageDimensions>
+						<shipmentPackageItemDetail>
+							<itemDetails>
+								<itemconsigneeAddress1 AddressType="CONSIGNEE">
+									<name>PATRIZIA SAMSON</name>
+									<phone>6476420410</phone>
+									<email>test@clickpost.in</email>
+									<addressLine1>24 SHARBOT AVE, SCARBOROUGH, . M1H 1Y7    </addressLine1>
+									<addressLine2></addressLine2>
+									<addressLine3></addressLine3>
+									<city>TORONTO</city>
+									<stateChoice>
+										<stateProvince>ON</stateProvince>
+									</stateChoice>
+									<zip>M1H1Y7</zip>
+									<countryCode>CA</countryCode>
+									<countryName>Canada</countryName>
+								</itemconsigneeAddress1>
+								<itemshipmentPackageActualGrossWeight1>
+									<weightValue unitOfMeasure="LB">2.0</weightValue>
+								</itemshipmentPackageActualGrossWeight1>
+								<itemshipmentPackageDimensions1>
+									<lengthValue unitOfMeasure="CM">21.0</lengthValue>
+									<heightValue unitOfMeasure="CM">15.0</heightValue>
+									<widthValue unitOfMeasure="CM">20.0</widthValue>
+								</itemshipmentPackageDimensions1>
+							</itemDetails>
+						</shipmentPackageItemDetail>
+						<totalDeclaredValue currencyISOCode="CAD">1.0</totalDeclaredValue>
+						<pkgHarmonizedTariffDescription></pkgHarmonizedTariffDescription>
+						<shipmentPackageItemQuantity>
+							<quantity unitOfMeasure="EA">1</quantity>
+						</shipmentPackageItemQuantity>
+					</shipmentPackageInfo>
+				</shipmentDetail>
+			</manifestDetail>
+			<manifestSummary>
+			<totalShipmentQuantity>
+				<quantity unitOfMeasure="EA">549</quantity>
+			</totalShipmentQuantity>
+			<totalShipmentValue>
+				<chargeOrAllowance>CHARGE</chargeOrAllowance>
+				<monetaryAmount currencyISOCode="CAD">512.0</monetaryAmount>
+			</totalShipmentValue>
+			<totalDeclaredGrossWeight>
+				<weightValue unitOfMeasure="LB">1648.66</weightValue>
+			</totalDeclaredGrossWeight>
+			<totalActualGrossWeight>
+				<weightValue unitOfMeasure="LB">1648.66</weightValue>
+			</totalActualGrossWeight>
+			</manifestSummary>
+	</message>
+</transmission>

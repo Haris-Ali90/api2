@@ -1,0 +1,1 @@
+    <img style="width:50px; height: 50px;" class="img-thumbnail"  onClick="preview(this);"  src="{{$record->image}}"/>

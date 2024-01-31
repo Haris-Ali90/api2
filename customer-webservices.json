@@ -1,0 +1,645 @@
+{
+    "swagger": "3.0",
+    "info": {
+        "description": "LocalHost Webservices",
+        "version": "1.0.0",
+        "title": "LocalHost",
+        "termsOfService": "",
+        "contact": {
+            "email": "basit@joeyco.com"
+        },
+        "license": {
+            "name": "JoeyCO",
+            "url": "https://www.joeyco.com/"
+        }
+    },
+    "host": "",
+    "basePath": "",
+    "tags": [
+        {
+            "name": "Auth",
+            "description": "Authorization Services"
+        },
+        {
+            "name": "User",
+            "description": "List Services"
+        }
+    ],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "securityDefinitions": {
+        "Bearer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    },
+    "paths": {
+        "/signup": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Auth login",
+                "description": "Register User",
+                "operationId": "RegisterUser",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "full_name",
+                        "in": "formData",
+                        "description": "Full Name",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "password",
+                        "in": "formData",
+                        "description": "Password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "confirm_password",
+                        "in": "formData",
+                        "description": "Confirm Password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_token",
+                        "in": "formData",
+                        "description": "Device Token",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_type",
+                        "in": "formData",
+                        "description": "Device Type",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "profile_picture",
+                        "in": "formData",
+                        "description": "Profile Picture",
+                        "required": false,
+                        "type": "file"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/login": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Auth login",
+                "description": "User Login",
+                "operationId": "UserLogin",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "password",
+                        "in": "formData",
+                        "description": "Password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_token",
+                        "in": "formData",
+                        "description": "Device Token",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_type",
+                        "in": "formData",
+                        "description": "Device Type",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+
+                }
+            }
+        },
+        "/auth/logout": {
+            "get": {
+                "tags": [
+                    "Auth"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Logout",
+                "description": "Logout User",
+                "operationId": "LogoutUser",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/forgot-password": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Forgot Password",
+                "description": "Forgot Password",
+                "operationId": "ForgotPassword",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/code-verify": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Verification Code",
+                "description": "Verification Code",
+                "operationId": "VerificationCode",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "code",
+                        "in": "formData",
+                        "description": "Code",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/resend-code": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Resend Code",
+                "description": "Resend Code",
+                "operationId": "ResendCode",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/change-password": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Change Password",
+                "description": "Change Password",
+                "operationId": "ChangePassword",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "current_password",
+                        "in": "formData",
+                        "description": "Current Password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "new_password",
+                        "in": "formData",
+                        "description": "New Password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "new_password_confirmation",
+                        "in": "formData",
+                        "description": "New Password Confirmation",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/account/me": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "User Account ",
+                "description": "User Account",
+                "operationId": "UserAccount",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/account/update": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Update User",
+                "description": "Update User",
+                "operationId": "updateUser",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "full_name",
+                        "in": "formData",
+                        "description": "Full Name",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "phone",
+                        "in": "formData",
+                        "description": "Phone e.g. (202) 564-3546",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "profile_picture",
+                        "in": "formData",
+                        "description": "Profile Picture",
+                        "required": false,
+                        "type": "file"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/contactus": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Contact Us",
+                "description": "Contact Us",
+                "operationId": "ContactUs",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "description": "Name",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "phone",
+                        "in": "formData",
+                        "description": "Phone e.g (202) 564-3546",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "message",
+                        "in": "formData",
+                        "description": "Message",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/tracking": {
+            "get": {
+                "tags": [
+                    "Tracking"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Tracking Detail",
+                "description": "Tracking Detail",
+                "operationId": "Tracking Detail",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id",
+                        "in": "query",
+                        "description": "Tracking Id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/bootmeup": {
+            "get": {
+                "tags": [
+                    "Boot Me Up"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Boot Me Up ",
+                "description": "Boot Me Up",
+                "operationId": "BootMeUp",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/feedback": {
+            "post": {
+                "tags": [
+                    "Feedback"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Feedback",
+                "description": "Feedback",
+                "operationId": "Feedback",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "joey_id",
+                        "in": "formData",
+                        "description": "Joey Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "feedback",
+                        "in": "formData",
+                        "description": "Feedback",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "ratting",
+                        "in": "formData",
+                        "description": "Ratting",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "Type",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/customer-page": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Pages",
+                "description": "Pages",
+                "operationId": "Pages",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "query",
+                        "description": "Slug",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/getNotifications": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Get notification",
+                "description": "Get notification",
+                "operationId": "Get notification",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page",
+                        "required": false,
+                        "type": "string",
+                        "default": 1
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit",
+                        "required": false,
+                        "type": "string",
+                        "default": 20
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        }
+
+    }
+}

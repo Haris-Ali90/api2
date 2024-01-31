@@ -1,0 +1,4827 @@
+{
+    "swagger": "3.0",
+    "info": {
+        "description": "LocalHost Webservices",
+        "version": "1.0.0",
+        "title": "LocalHost",
+        "termsOfService": "",
+        "contact": {
+            "email": "shahreyar.nadeem@joeyco.com"
+        },
+        "license": {
+            "name": "JoeyCO",
+            "url": "https://www.joeyco.com/"
+        }
+    },
+    "host": "",
+    "basePath": "",
+    "tags": [
+        {
+            "name": "Auth",
+            "description": "Authorization Services"
+        },
+        {
+            "name": "Joey",
+            "description": "List Services"
+        },
+        {
+            "name": "Home Page",
+            "description": "Section"
+        },
+        {
+            "name": "Flag",
+            "description": "Section"
+        },
+        {
+            "name": "Vehicles",
+            "description": " List"
+        },
+        {
+            "name": "Help",
+            "description": "Section"
+        },
+        {
+            "name": "Summary",
+            "description": "Section"
+        },
+        {
+            "name": "Grocery Orders",
+            "description": "Section"
+        },
+        {
+            "name": "Ecommerce Routes",
+            "description": "Section"
+        },
+        {
+            "name": "Available Routes",
+            "description": "Section"
+        },
+        {
+            "name": "Training",
+            "description": "Section"
+        },
+        {
+            "name" : "Finance",
+            "description"  : "Section"
+        }
+    ],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "securityDefinitions": {
+        "Bearer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    },
+    "paths": {
+        "/signup": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Auth login",
+                "description": "Register Joey",
+                "operationId": "RegisterJoey",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "first_name",
+                        "in": "formData",
+                        "description": "first_name",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_name",
+                        "in": "formData",
+                        "description": "last_name",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "email",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "password",
+                        "in": "formData",
+                        "description": "password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_token",
+                        "in": "formData",
+                        "description": "device_token",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_type",
+                        "in": "formData",
+                        "description": "device_type",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "user",
+                        "in": "formData",
+                        "description": "user_type",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "location_id",
+                        "in": "formData",
+                        "description": "location_id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/login": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Auth login",
+                "description": "User Login",
+                "operationId": "UserLogin",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "password",
+                        "in": "formData",
+                        "description": "Password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_token",
+                        "in": "formData",
+                        "description": "Device Token",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_type",
+                        "in": "formData",
+                        "description": "Device Type",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "formData",
+                        "description": "Time Zone",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/auth/logout": {
+            "get": {
+                "tags": [
+                    "Auth"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Logout",
+                "description": "Logout User",
+                "operationId": "LogoutUser",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/forgot-password": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Forgot Password",
+                "description": "Forgot Password",
+                "operationId": "ForgotPassword",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/profile": {
+            "get": {
+                "tags": [
+                    "Joey"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Account ",
+                "description": "Joey Account",
+                "operationId": "JoeyAccount",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/get-agreement": {
+            "get": {
+                "tags": [
+                    "Joey"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey agreement",
+                "description": "Joey agreement",
+                "operationId": "JoeyAgreement",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/save-agreement": {
+            "post": {
+                "tags": [
+                    "Joey"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey save agreement",
+                "description": "Joey save agreement",
+                "operationId": "JoeySave Agreement",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "insurance_agree_accepted",
+                        "in": "formData",
+                        "description": "Accept Agreement",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/profile/update": {
+            "post": {
+                "tags": [
+                    "Joey"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Update Joey",
+                "description": "Update Joey",
+                "operationId": "updateJoey",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "first_name",
+                        "in": "formData",
+                        "description": "first_name",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_name",
+                        "in": "formData",
+                        "description": "last_name",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "phone",
+                        "in": "formData",
+                        "description": "Phone e.g. (202) 564-3546",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "profile_picture",
+                        "in": "formData",
+                        "description": "Profile Picture",
+                        "required": false,
+                        "type": "file"
+                    },
+                    {
+                        "name": "date_of_birth",
+                        "in": "formData",
+                        "description": "Date of Birth e.g. YYYY-MM-DD",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "address",
+                        "in": "formData",
+                        "description": "Address",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "vehicle_id",
+                        "in": "formData",
+                        "description": "Vehicle Id",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/change-password": {
+            "post": {
+                "tags": [
+                    "Joey"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Change Password",
+                "description": "Change Password",
+                "operationId": "ChangePassword",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "current_password",
+                        "in": "formData",
+                        "description": "Current Password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "new_password",
+                        "in": "formData",
+                        "description": "New Password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "new_password_confirmation",
+                        "in": "formData",
+                        "description": "New Password Confirmation",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/vehicle/list": {
+            "get": {
+                "tags": [
+                    "Vehicles"
+                ],
+                "summary": "Vehicles List",
+                "description": "Vehicles List",
+                "operationId": "Vehicles",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/zonelist": {
+            "get": {
+                "tags": [
+                    "Zones"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Zones List",
+                "description": "Zones List",
+                "operationId": "Zones",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/claim/list": {
+            "get": {
+                "tags": [
+                    "Flag"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Claim List",
+                "description": "Claim List",
+                "operationId": "Claims",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status",
+                        "required": false,
+                        "type": "text"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page",
+                        "required": false,
+                        "type": "integer",
+                        "default": 1
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit",
+                        "required": false,
+                        "type": "integer",
+                        "default": 10
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/claim/counts": {
+            "get": {
+                "tags": [
+                    "Flag"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Claim Counts",
+                "description": "Claim Counts",
+                "operationId": "claimCounts",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/flag/counts": {
+            "get": {
+                "tags": [
+                    "Flag"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Flag Counts",
+                "description": "Flag Counts",
+                "operationId": "flagCounts",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/flag/list": {
+            "get": {
+                "tags": [
+                    "Flag"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Flag List",
+                "description": "Flag List",
+                "operationId": "flagList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status",
+                        "required": false,
+                        "type": "text"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page",
+                        "required": false,
+                        "type": "string",
+                        "default": 1
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit",
+                        "required": false,
+                        "type": "string",
+                        "default": 10
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/claim/reason": {
+            "get": {
+                "tags": [
+                    "Flag"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Claim Reason List",
+                "description": "Claim Reason List",
+                "operationId": "claimReasonList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey_performance": {
+            "get": {
+                "tags": [
+                    "Flag"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Performance",
+                "description": "Joey Performance",
+                "operationId": "joeyPerformance",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/claim/resubmit": {
+            "post": {
+                "tags": [
+                    "Flag"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Claim Resubmit",
+                "description": "Claim Resubmit",
+                "operationId": "ClaimResubmit",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id_merchant_order_no",
+                        "in": "formData",
+                        "description": "Tracking Id / Merchant Order No",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "reason_id",
+                        "in": "formData",
+                        "description": "Reason Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "Image",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joeys/complaints/new": {
+            "post": {
+                "tags": [
+                    "Help"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Complaint",
+                "description": "Complaint",
+                "operationId": "Complaint",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "order_id",
+                        "in": "formData",
+                        "description": "Order Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "joey_id",
+                        "in": "formData",
+                        "description": "Joey Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "Complaint Type",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "description",
+                        "in": "formData",
+                        "description": "Detail Of Complaint",
+                        "required": false,
+                        "type": "text"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/create-order/loblaws": {
+            "post": {
+                "tags": [
+                    "Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Create order Loblaws",
+                "description": "Create order Loblaws",
+                "operationId": "Create order Loblaws",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "order",
+                        "in": "body",
+                        "description": "order_details",
+                        "required": false,
+                        "example": {
+                            "notification_method": "none",
+                            "sprint": {
+                                "creator_id": "1",
+                                "due_time": "1631700884",
+                                "merchant_order_num": "testingY00944512",
+                                "tracking_id": "testingY00944512",
+                                "vehicle_id": "3",
+                                "start_time": "10:00",
+                                "end_time": "16:00"
+                            },
+                            "contact": {
+                                "name": "Testing",
+                                "phone": "4167385095"
+                            },
+                            "location": {
+                                "address": "38 Bishop Tutu Blvd, Toronto, ON M5V 2Z7",
+                                "postal_code": "M4A"
+                            },
+                            "payment": {
+                                "amount": "1000",
+                                "type": "make"
+                            }
+                        },
+                        "schema": "",
+                        "type": "object"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/create-order/wm": {
+            "post": {
+                "tags": [
+                    "Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Create order Walmart",
+                "description": "Create order Walmart",
+                "operationId": "Create order Walmart",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "order",
+                        "in": "body",
+                        "description": "order_details",
+                        "required": false,
+                        "example": {
+                            "notification_method": "none",
+                            "sprint": {
+                                "store_id": "1004",
+                                "due_time": "1631700884",
+                                "merchant_order_num": "testingY00944512",
+                                "tracking_id": "testingY00944512",
+                                "vehicle_id": "3",
+                                "start_time": "10:00",
+                                "end_time": "16:00"
+                            },
+                            "contact": {
+                                "name": "Testing",
+                                "phone": "4167385095"
+                            },
+                            "location": {
+                                "address": "38 Bishop Tutu Blvd, Toronto, ON M5V 2Z7",
+                                "postal_code": "M4A"
+                            },
+                            "payment": {
+                                "amount": "1000",
+                                "type": "make"
+                            }
+                        },
+                        "schema": "",
+                        "type": "object"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/create-order/ctc": {
+            "post": {
+                "tags": [
+                    "Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Create order CTC",
+                "description": "Create order CTC",
+                "operationId": "Create order CTC",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "order",
+                        "in": "body",
+                        "description": "order_details",
+                        "required": false,
+                        "example": {
+                            "notification_method": "none",
+                            "sprint": {
+                                "creator_id": "1004",
+                                "due_time": "1631700884",
+                                "merchant_order_num": "testingY00944512",
+                                "tracking_id": "testingY00944512",
+                                "vehicle_id": "3",
+                                "start_time": "10:00",
+                                "end_time": "16:00"
+                            },
+                            "contact": {
+                                "name": "Testing",
+                                "phone": "4167385095"
+                            },
+                            "location": {
+                                "address": "38 Bishop Tutu Blvd, Toronto, ON M5V 2Z7",
+                                "postal_code": "M4A"
+                            },
+                            "payment": {
+                                "amount": "1000",
+                                "type": "make"
+                            }
+                        },
+                        "schema": "",
+                        "type": "object"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/tasks/creation": {
+            "post": {
+                "tags": [
+                    "Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Create task",
+                "description": "Create task",
+                "operationId": "Create task",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "order",
+                        "in": "body",
+                        "description": "order_details",
+                        "required": false,
+                        "example": {
+                            "notification_method": "none",
+                            "sprint": {
+                                "type": "pickup",
+                                "creator_id": "1",
+                                "sprint_id": 475580,
+                                "merchant_order_num": "testingY00944512",
+                                "vehicle_id": "3",
+                                "start_time": "10:00",
+                                "end_time": "16:00"
+                            },
+                            "contact": {
+                                "name": "Testing",
+                                "email": "test@test.com",
+                                "phone": "4167385095"
+                            },
+                            "location": {
+                                "address": "38 Bishop Tutu Blvd, Toronto, ON M5V 2Z7",
+                                "address_line2": "55",
+                                "postal_code": "M4A"
+                            },
+                            "payment": {
+                                "amount": "1000",
+                                "type": "make"
+                            },
+                            "confirm_signature": 0,
+                            "confirm_pin": 1
+                        },
+                        "schema": "",
+                        "type": "object"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/create-order/local": {
+            "post": {
+                "tags": [
+                    "Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Create order CTC",
+                "description": "Create order CTC",
+                "operationId": "Create order CTC",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "order",
+                        "in": "body",
+                        "description": "order_details",
+                        "required": false,
+                        "example": {
+                            "notification_method": "none",
+                            "sprint": {
+                                "creator_id": "1004",
+                                "due_time": "1631700884",
+                                "merchant_order_num": "testingY00944512",
+                                "tracking_id": "testingY00944512",
+                                "vehicle_id": "3",
+                                "start_time": "10:00",
+                                "end_time": "16:00"
+                            },
+                            "contact": {
+                                "name": "Testing",
+                                "phone": "4167385095"
+                            },
+                            "location": {
+                                "address": "38 Bishop Tutu Blvd, Toronto, ON M5V 2Z7",
+                                "postal_code": "M4A"
+                            },
+                            "payment": {
+                                "amount": "1000",
+                                "type": "make"
+                            }
+                        },
+                        "schema": "",
+                        "type": "object"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joeys/orders": {
+            "post": {
+                "tags": [
+                    "Grocery Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Order",
+                "description": "Joey Order",
+                "operationId": "JoeyOrder",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/optimize": {
+            "post": {
+                "tags": [
+                    "Joey"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Route Optimize",
+                "description": "Route Optimize",
+                "operationId": "RouteOptimize",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "is_optimize",
+                        "in": "formData",
+                        "description": "",
+                        "required": true,
+                        "example": "is_optimize 0 and 1",
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/orders/list": {
+            "get": {
+                "tags": [
+                    "Grocery Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Order List Only",
+                "description": "Joey Order List Only",
+                "operationId": "JoeyOrderList Only",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/order/details": {
+            "post": {
+                "tags": [
+                    "Grocery Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey sprint details",
+                "description": "Joey sprint details",
+                "operationId": "JoeySprintDetails",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "formData",
+                        "description": "sprintid",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joeys/new/orders": {
+            "post": {
+                "tags": [
+                    "Grocery Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey New Order",
+                "description": "Joey New Order",
+                "operationId": "JoeyNewOrder",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/ordersList": {
+            "post": {
+                "tags": [
+                    "Summary"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Order List",
+                "description": "Joey Order List",
+                "operationId": "JoeyOrderList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "start_date",
+                        "in": "formData",
+                        "description": "start_date",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "formData",
+                        "description": "end_date",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "formData",
+                        "description": "timezone",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page",
+                        "required": false,
+                        "type": "string",
+                        "default": 1
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit",
+                        "required": false,
+                        "type": "string",
+                        "default": 20
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/ordersDetails": {
+            "post": {
+                "tags": [
+                    "Summary"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Order Details",
+                "description": "Joey Order Details",
+                "operationId": "JoeyOrderDetails",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "order_num",
+                        "in": "formData",
+                        "description": "Order Num",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/routes": {
+            "get": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Route",
+                "description": "Joey Route",
+                "operationId": "JoeyRoute",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/routes/list": {
+            "get": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "New Joey Route",
+                "description": "New Joey Route",
+                "operationId": "NewJoeyRoute",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/route/list/zone_wise": {
+            "get": {
+                "tags": [
+                    "Available Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Available Routes",
+                "description": "Available Routes",
+                "operationId": "AvailableRoute",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/order/list": {
+            "get": {
+                "tags": [
+                    "Available Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Order List",
+                "description": "Order List",
+                "operationId": "Order List",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "route_id",
+                        "in": "query",
+                        "description": "route_id",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/route/accept": {
+            "post": {
+                "tags": [
+                    "Available Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Available Route Accept",
+                "description": "Available Route Accept",
+                "operationId": "AvailableRouteAccept",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "route_id",
+                        "in": "formData",
+                        "description": "route_id",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/zone/list": {
+            "get": {
+                "tags": [
+                    "Available Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Zone List",
+                "description": "Zone List",
+                "operationId": "ZoneList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/route/apply/filter": {
+            "post": {
+                "tags": [
+                    "Available Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Apply Filter",
+                "description": "Apply Filter",
+                "operationId": "ApplyFilter",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "zone_id",
+                        "in": "formData",
+                        "description": "zone_id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "distance_min",
+                        "in": "formData",
+                        "description": "distance_min",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "distance_max",
+                        "in": "formData",
+                        "description": "distance_max",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "start_time",
+                        "in": "formData",
+                        "description": "Time(00:00:00)",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "end_time",
+                        "in": "formData",
+                        "description": "Time(00:00:00)",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "price_min",
+                        "in": "formData",
+                        "description": "price_min",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "price_max",
+                        "in": "formData",
+                        "description": "price_max",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "formData",
+                        "description": "timezone",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/get/apply/filter": {
+            "get": {
+                "tags": [
+                    "Available Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Get Apply Filter",
+                "description": "Get Apply Filter",
+                "operationId": "GetApplyFilter",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/hub/bundle": {
+            "get": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Hub Bundle List",
+                "description": "Hub Bundle List",
+                "operationId": "HubBundleList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "hub_id",
+                        "in": "query",
+                        "description": "hub_id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "route_id",
+                        "in": "query",
+                        "description": "route_id",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "type",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/vendor/order/list": {
+            "get": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Vendor Order List",
+                "description": "Vendor Order List",
+                "operationId": "VendorOrderList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "vendor_id",
+                        "in": "query",
+                        "description": "vendor_id",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/hub/orders": {
+            "get": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Hub Orders",
+                "description": "Hub Orders",
+                "operationId": "HubOrders",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "bundle_id",
+                        "in": "query",
+                        "description": "bundle_id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "hub_id",
+                        "in": "query",
+                        "description": "hub_id",
+                        "required": false,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/mid/mile/pick_drop/order": {
+            "post": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Mid Mile Pick And Drop Orders",
+                "description": "Mid Mile Pick And Drop Orders",
+                "operationId": "MidMilePickAndDropOrders",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "bundle_id",
+                        "in": "formData",
+                        "description": "bundle_id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "hub_id",
+                        "in": "formData",
+                        "description": "hub_id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "route_id",
+                        "in": "formData",
+                        "description": "route_id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "type (pickup) and (dropoff)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "image",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "formData",
+                        "description": "latitude",
+                        "required": false,
+                        "type": "float"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "formData",
+                        "description": "longitude",
+                        "required": false,
+                        "type": "float"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/itineraries/Route": {
+            "get": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Itineraries Route",
+                "description": "Joey Itineraries Route",
+                "operationId": "JoeyItinerariesRoute",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/routesList": {
+            "post": {
+                "tags": [
+                    "Summary"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey RouteList",
+                "description": "Joey RouteList",
+                "operationId": "JoeyRouteList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "start_date",
+                        "in": "formData",
+                        "description": "start_date",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "formData",
+                        "description": "end_date",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "formData",
+                        "description": "timezone",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page",
+                        "required": false,
+                        "type": "string",
+                        "default": 1
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit",
+                        "required": false,
+                        "type": "string",
+                        "default": 20
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/routesListDetails": {
+            "post": {
+                "tags": [
+                    "Summary"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey RouteList Details",
+                "description": "Joey RouteList Details",
+                "operationId": "JoeyRouteListDetails",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "route_id",
+                        "in": "formData",
+                        "description": "route Id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/route/pickup": {
+            "post": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey route pickup",
+                "description": "Joey route pickup",
+                "operationId": "JoeyRoutePickup",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id",
+                        "in": "formData",
+                        "description": "Tracking Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "formData",
+                        "description": "latitude",
+                        "required": false,
+                        "type": "float"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "formData",
+                        "description": "longitude",
+                        "required": false,
+                        "type": "float"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/order/confirm": {
+            "post": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey order confirm",
+                "description": "Joey order confirm",
+                "operationId": "JoeyOrderConfirm",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id",
+                        "in": "formData",
+                        "description": "Tracking Id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/order/to_pickup": {
+            "post": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Order To Pickup Hailify",
+                "description": "Order To Pickup Hailify",
+                "operationId": "OrderToPickupHailify",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "route_id",
+                        "in": "formData",
+                        "description": "Route Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "formData",
+                        "description": "latitude",
+                        "required": false,
+                        "type": "float"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "formData",
+                        "description": "longitude",
+                        "required": false,
+                        "type": "float"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/update/itinary/status": {
+            "post": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey itinerary status",
+                "description": "Joey itinerary status",
+                "operationId": "JoeyitineraryStatus",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "status_id",
+                        "in": "formData",
+                        "description": "status Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "task_id",
+                        "in": "formData",
+                        "description": "task Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "Image",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "formData",
+                        "description": "latitude",
+                        "required": false,
+                        "type": "float"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "formData",
+                        "description": "longitude",
+                        "required": false,
+                        "type": "float"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/routes/status/list": {
+            "get": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Route Status List",
+                "description": "Route Status List",
+                "operationId": "RouteStatusList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/store/picks": {
+            "get": {
+                "tags": [
+                    "Joey Store"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Store",
+                "description": "Joey Store",
+                "operationId": "JoeyStore",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/store/pickup": {
+            "post": {
+                "tags": [
+                    "Joey Store"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Store Pick",
+                "description": "Joey Store Pick",
+                "operationId": "JoeyStorePick",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id",
+                        "in": "formData",
+                        "description": "Tracking Id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/store/pickup/new": {
+            "post": {
+                "tags": [
+                    "Joey Store"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Store Pick New",
+                "description": "Joey Store Pick New",
+                "operationId": "JoeyStorePickNew",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id",
+                        "in": "formData",
+                        "description": "Tracking Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "route_id",
+                        "in": "formData",
+                        "description": "Route Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "formData",
+                        "description": "latitude",
+                        "required": false,
+                        "type": "float"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "formData",
+                        "description": "longitude",
+                        "required": false,
+                        "type": "float"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/hub/deliver": {
+            "post": {
+                "tags": [
+                    "Joey Store"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "hub Delivery",
+                "description": "hub Delivery",
+                "operationId": "hubDelivery",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id",
+                        "in": "formData",
+                        "description": "Tracking Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "image",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/hub/deliver/new": {
+            "post": {
+                "tags": [
+                    "Joey Store"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "hub Delivery New",
+                "description": "hub Delivery New",
+                "operationId": "hubDeliveryNew",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id",
+                        "in": "formData",
+                        "description": "Tracking Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "route_id",
+                        "in": "formData",
+                        "description": "Route Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "image",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "formData",
+                        "description": "latitude",
+                        "required": false,
+                        "type": "float"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "formData",
+                        "description": "longitude",
+                        "required": false,
+                        "type": "float"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+
+        "/order/customer/info": {
+            "get": {
+                "tags": [
+                    "Ecommerce Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Mainfest fields",
+                "description": "Mainfest fields",
+                "operationId": "Mainfestfields",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "num",
+                        "in": "query",
+                        "description": "order num",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/update/status": {
+            "post": {
+                "tags": [
+                    "Grocery Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Update Status",
+                "description": "Update Status",
+                "operationId": "UpdateStatus",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "status_id",
+                        "in": "formData",
+                        "description": "Status Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "task_id",
+                        "in": "formData",
+                        "description": "Task Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "Image",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/task-confirmations": {
+            "post": {
+                "tags": [
+                    "Grocery Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Task Confirmation",
+                "description": "Task Confirmation",
+                "operationId": "TaskConfirmation",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "confirmation_num",
+                        "in": "formData",
+                        "description": "Confirmation Num",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "image/signature",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "pin",
+                        "in": "formData",
+                        "description": "pin",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/schedules": {
+            "get": {
+                "tags": [
+                    "Schedules"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Schedules",
+                "description": "Schedules",
+                "operationId": "Schedules",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "zone_id",
+                        "in": "query",
+                        "description": "zone id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "start",
+                        "in": "query",
+                        "description": "start",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "end",
+                        "in": "query",
+                        "description": "end",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "vehicle_id",
+                        "in": "query",
+                        "description": "vehicle id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "timezone",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/schedules": {
+            "post": {
+                "tags": [
+                    "Summary"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Schedules",
+                "description": "Joey Schedules",
+                "operationId": "JoeySchedules",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "start_date",
+                        "in": "formData",
+                        "description": "start_date",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "formData",
+                        "description": "end_date",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "formData",
+                        "description": "timezone",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/scheduleDetails": {
+            "post": {
+                "tags": [
+                    "Summary"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Schedule Details",
+                "description": "Joey Schedule Details",
+                "operationId": "JoeyScheduleDetails",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "schedule_id",
+                        "in": "formData",
+                        "description": "schedule id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/update/schedules": {
+            "post": {
+                "tags": [
+                    "Schedules"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Update  Schedules",
+                "description": "Update  Schedules",
+                "operationId": "UpdateSchedules",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "ScheduleId",
+                        "in": "formData",
+                        "description": "Schedule id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "type",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joeys/shift/start": {
+            "put": {
+                "tags": [
+                    "Schedules"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Shift Start",
+                "description": "Shift Start",
+                "operationId": "ShiftStart",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "shift_id",
+                        "in": "formData",
+                        "description": "Shiftid",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "note",
+                        "in": "formData",
+                        "description": "note",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "formData",
+                        "description": "latitude",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "formData",
+                        "description": "longitude",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "formData",
+                        "description": "timezone",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joeys/shift/end": {
+            "put": {
+                "tags": [
+                    "Schedules"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Shift End",
+                "description": "Shift End",
+                "operationId": "ShiftEnd",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "shift_id",
+                        "in": "formData",
+                        "description": "Shiftid",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "note",
+                        "in": "formData",
+                        "description": "note",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joeys/duty/start": {
+            "post": {
+                "tags": [
+                    "Home Page"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Duty Start",
+                "description": "Joey Duty Start",
+                "operationId": "JoeyDutyStart",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "vehicle_id",
+                        "in": "formData",
+                        "description": "vehicle id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "formData",
+                        "description": "latitude",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "formData",
+                        "description": "longitude",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joeys/duty/end": {
+            "post": {
+                "tags": [
+                    "Home Page"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Duty End",
+                "description": "Joey Duty End",
+                "operationId": "JoeyDutyEnd",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/accepted/slots": {
+            "get": {
+                "tags": [
+                    "Schedules"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey accepted slots",
+                "description": "Joey accepted slots",
+                "operationId": "JoeyAcceptedSlots",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "date",
+                        "in": "query",
+                        "description": "Date e.g 2021-05-17",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "timezone",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joeys/next-shift": {
+            "get": {
+                "tags": [
+                    "Schedules"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Next shift",
+                "description": "Joey Next shift",
+                "operationId": "JoeyNextShift",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/sprints/accept": {
+            "put": {
+                "tags": [
+                    "Grocery Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Accepted Order",
+                "description": "Joey Accepted Order",
+                "operationId": "JoeyAcceptedOrder",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "sprint",
+                        "in": "formData",
+                        "description": "sprint id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joeys/locations": {
+            "post": {
+                "tags": [
+                    "Grocery Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Location",
+                "description": "Joey Location",
+                "operationId": "Joey Location",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "latitude",
+                        "in": "formData",
+                        "description": "latitude",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "formData",
+                        "description": "longitude",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/faq": {
+            "get": {
+                "tags": [
+                    "Help"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Faqs",
+                "description": "Faqs",
+                "operationId": "Faqs",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "vendor_id",
+                        "in": "query",
+                        "description": "vendor_id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/faq/vendors": {
+            "get": {
+                "tags": [
+                    "Help"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Faqs Vendors",
+                "description": "Faqs Vendors",
+                "operationId": "Faqs Vendors",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/complaint/types": {
+            "get": {
+                "tags": [
+                    "Help"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Complaint Types",
+                "description": "Joey Complaint Types",
+                "operationId": "JoeyComplaintTypes",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/order/categories/VendorsList": {
+            "get": {
+                "tags": [
+                    "Training"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Order vendor list",
+                "description": "Order vendor list",
+                "operationId": "Ordervendorlist",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/order/category/trainings/joey": {
+            "get": {
+                "tags": [
+                    "Training"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Order Category Joey Training",
+                "description": "Order Category Joey Training",
+                "operationId": "OrderCategoryJoeyTraining",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "order category id",
+                        "in": "query",
+                        "description": "order_category_ids",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/vendor/trainings/joey": {
+            "get": {
+                "tags": [
+                    "Training"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Vendor training Joey",
+                "description": "Vendor training Joey",
+                "operationId": "VendortrainingJoey",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Type (category)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "file_type",
+                        "in": "query",
+                        "description": "File Type (video ,document)",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/training/seen": {
+            "post": {
+                "tags": [
+                    "Training"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Seen Api",
+                "description": "Seen Api",
+                "operationId": "SeenApi",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "training id",
+                        "in": "formData",
+                        "description": "training_id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/quiz/score": {
+            "post": {
+                "tags": [
+                    "Training"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Quiz Score",
+                "description": "Joey Quiz Score",
+                "operationId": "Joey Quiz Score",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "form id",
+                        "in": "formData",
+                        "description": "form_id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "score",
+                        "in": "formData",
+                        "description": "score",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "total",
+                        "in": "formData",
+                        "description": "total",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/category/quiz": {
+            "get": {
+                "tags": [
+                    "Training"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": " Quiz category",
+                "description": "Quiz category",
+                "operationId": "Quizcategory",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Type (category)",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/profile/v2": {
+            "get": {
+                "tags": [
+                    "Joey Profile v2"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Profile v2",
+                "description": "Joey Profile v2",
+                "operationId": "JoeyProfilev2",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "TimeZone",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/profile/update/v2": {
+            "post": {
+                "tags": [
+                    "Joey Profile v2"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Profile v2",
+                "description": "Joey Profile v2",
+                "operationId": "JoeyProfilev2",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "first_name",
+                        "in": "formData",
+                        "description": "first_name",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_name",
+                        "in": "formData",
+                        "description": "last_name",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "email",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "phone",
+                        "in": "formData",
+                        "description": "Phone e.g. (202) 564-3546",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "address",
+                        "in": "formData",
+                        "description": "address",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "Profile Picture",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/vehicle": {
+            "get": {
+                "tags": [
+                    "Joey Vehicle"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Vehicle",
+                "description": "Joey Vehicle",
+                "operationId": "JoeyVehicle",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/vehicle/update": {
+            "post": {
+                "tags": [
+                    "Joey Vehicle"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Vehicle Update",
+                "description": "Joey Vehicle Update",
+                "operationId": "JoeyVehicleUpdate",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "vehicle_id",
+                        "in": "formData",
+                        "description": "Vehicle Id",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "make",
+                        "in": "formData",
+                        "description": "make",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "color",
+                        "in": "formData",
+                        "description": "color",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "model",
+                        "in": "formData",
+                        "description": "model",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "license_plate",
+                        "in": "formData",
+                        "description": "license_plate",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/document/list": {
+            "get": {
+                "tags": [
+                    "Joey"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Document list",
+                "description": "Joey Document list",
+                "operationId": "JoeyDocumentlist",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/document/type": {
+            "get": {
+                "tags": [
+                    "Joey"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Document type",
+                "description": "Joey Document type",
+                "operationId": "JoeyDocumenttype",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/document": {
+            "post": {
+                "tags": [
+                    "Joey"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Document",
+                "description": "Joey Document",
+                "operationId": "JoeyDocument",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "driver_permit",
+                        "in": "formData",
+                        "description": "Driver Permit",
+                        "required": false,
+                        "type": "file"
+                    },
+                    {
+                        "name": "driver_permit_exp_date",
+                        "in": "formData",
+                        "description": "Driver Permit Expire Date e.g 2021-05-20",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "driver_license",
+                        "in": "formData",
+                        "description": "Driver License",
+                        "required": false,
+                        "type": "file"
+                    },
+                    {
+                        "name": "driver_license_exp_date",
+                        "in": "formData",
+                        "description": "Driver License Expire Date e.g 2021-05-20",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "study_permit",
+                        "in": "formData",
+                        "description": "Study Permit",
+                        "required": false,
+                        "type": "file"
+                    },
+                    {
+                        "name": "study_permit_exp_date",
+                        "in": "formData",
+                        "description": "Study Permit Expire Date e.g 2021-05-20",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "vehicle_insurance",
+                        "in": "formData",
+                        "description": "Vehicle Insurance",
+                        "required": false,
+                        "type": "file"
+                    },
+                    {
+                        "name": "vehicle_insurance_exp_date",
+                        "in": "formData",
+                        "description": "Vehicle Insurance Expire Date e.g 2021-05-20",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "additional_document_1",
+                        "in": "formData",
+                        "description": "Additional Document 1",
+                        "required": false,
+                        "type": "file"
+                    },
+                    {
+                        "name": "additional_document_1_exp_date",
+                        "in": "formData",
+                        "description": "Additional Document 1 Expire Date e.g 2021-05-20",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "additional_document_2",
+                        "in": "formData",
+                        "description": "Additional Document 2",
+                        "required": false,
+                        "type": "file"
+                    },
+                    {
+                        "name": "additional_document_2_exp_date",
+                        "in": "formData",
+                        "description": "Additional Document 2 Expire Date e.g 2021-05-20",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "additional_document_3",
+                        "in": "formData",
+                        "description": "Additional Document 3",
+                        "required": false,
+                        "type": "file"
+                    },
+                    {
+                        "name": "additional_document_3_exp_date",
+                        "in": "formData",
+                        "description": "Additional Document 3 Expire Date e.g 2021-05-20",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "sin",
+                        "in": "formData",
+                        "description": "Sin",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "sin_exp_date",
+                        "in": "formData",
+                        "description": "Sin Expire Date e.g 2021-05-20",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/document/type": {
+            "post": {
+                "tags": [
+                    "Joey"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Document",
+                "description": "Joey Document Type",
+                "operationId": "JoeyDocumentType",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "document_id",
+                        "in": "formData",
+                        "description": "document Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "document",
+                        "in": "formData",
+                        "description": "Document",
+                        "required": false,
+                        "type": "file"
+                    },
+                    {
+                        "name": "document_exp_date",
+                        "in": "formData",
+                        "description": "Expire Date e.g 2021-05-20",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "document_type",
+                        "in": "formData",
+                        "description": "document Type (file,text,sin)",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "document_text",
+                        "in": "formData",
+                        "description": "document Text",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/deposit": {
+            "get": {
+                "tags": [
+                    "Joey Deposit"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Deposit",
+                "description": "Joey Deposit",
+                "operationId": "JoeyDeposit",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/save/deposit": {
+            "post": {
+                "tags": [
+                    "Joey Deposit"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Save  Deposit",
+                "description": "Joey Save Deposit",
+                "operationId": "JoeySaveDeposit",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "institution_no",
+                        "in": "formData",
+                        "description": "institution_no",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "branch_no",
+                        "in": "formData",
+                        "description": "branch_no",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "account_no",
+                        "in": "formData",
+                        "description": "account_no",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "hst_number",
+                        "in": "formData",
+                        "description": "hst_number",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "hst_company",
+                        "in": "formData",
+                        "description": "hst_company",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "hear_from",
+                        "in": "formData",
+                        "description": "hear_from",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "Image",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/work_preference": {
+            "get": {
+                "tags": [
+                    "Joey work preference"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey work preference",
+                "description": "Joey workpreference",
+                "operationId": "JoeyWorkPreference",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/work_preference/update": {
+            "post": {
+                "tags": [
+                    "Joey work preference"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey work preference ",
+                "description": "Joey work preference",
+                "operationId": "JoeyWorkPreference",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "work_type",
+                        "in": "formData",
+                        "description": "work_type",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "contact_time",
+                        "in": "formData",
+                        "description": "contact_time",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "preferred_zone_id",
+                        "in": "formData",
+                        "description": "preferred_zone_id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "shift_store_type",
+                        "in": "formData",
+                        "description": "shift_store_type",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/summary": {
+            "post": {
+                "tags": [
+                    "Summary"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Summary",
+                "description": "Joey Summary",
+                "operationId": "JoeySummary",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "start_date",
+                        "in": "formData",
+                        "description": "start_date",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "formData",
+                        "description": "end_date",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "formData",
+                        "description": "timezone",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/about-us": {
+            "get": {
+                "tags": [
+                    "Help"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "About Us",
+                "description": "About Us",
+                "operationId": "AboutUs",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/terms-condition": {
+            "get": {
+                "tags": [
+                    "Help"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Terms Condition",
+                "description": "Terms Condition",
+                "operationId": "TermsCondition",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/privacy-policy": {
+            "get": {
+                "tags": [
+                    "Help"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Privacy Policy",
+                "description": "Privacy Policy",
+                "operationId": "PrivacyPolicy",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/workTime": {
+            "get": {
+                "tags": [
+                    "Work time"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Work time",
+                "description": "Work Time",
+                "operationId": "WorkTime",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/workType": {
+            "get": {
+                "tags": [
+                    "Work Type"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Work Type",
+                "description": "Work Type",
+                "operationId": "WorkType",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/vendor": {
+            "get": {
+                "tags": [
+                    "Training"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Vendors list",
+                "description": "Vendors list",
+                "operationId": "Vendorslist",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/categories": {
+            "get": {
+                "tags": [
+                    "Training"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Categories List",
+                "description": "Categories List",
+                "operationId": "CategoriesList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/getNotifications": {
+            "get": {
+                "tags": [
+                    "Notification"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Get notification",
+                "description": "Get notification",
+                "operationId": "Get notification",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page",
+                        "required": false,
+                        "type": "string",
+                        "default": 1
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit",
+                        "required": false,
+                        "type": "string",
+                        "default": 20
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/checklist": {
+            "get": {
+                "tags": [
+                    "Home Page"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey CheckList",
+                "description": "Joey CheckList",
+                "operationId": "JoeyCheckList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey-attempt-quiz": {
+            "post": {
+                "tags": [
+                    "Training"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Attempt Quiz",
+                "description": "Joey Attempt Quiz",
+                "operationId": "JoeyAttemptQuiz",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "quiz",
+                        "in": "body",
+                        "description": "branch_no",
+                        "required": false,
+                        "example": {
+                            "category_id": 1,
+                            "is_passed": 1,
+                            "quiz": [
+                                {
+                                    "question_id": 1,
+                                    "answer_id": 1
+                                },
+                                {
+                                    "question_id": 2,
+                                    "answer_id": 2
+                                },
+                                {
+                                    "question_id": 3,
+                                    "answer_id": 3
+                                },
+                                {
+                                    "question_id": 4,
+                                    "answer_id": 4
+                                }
+                            ]
+                        },
+                        "schema": "",
+                        "type": "object"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/update/itinary/status/offline": {
+            "post": {
+                "tags": [
+                    "Offline"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey itinerary status",
+                "description": "Joey itinerary status",
+                "operationId": "JoeyitineraryStatus",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "status_id",
+                        "in": "formData",
+                        "description": "status Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "task_id",
+                        "in": "formData",
+                        "description": "task Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "Image",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "created_at",
+                        "in": "formData",
+                        "description": "created at",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "formData",
+                        "description": "latitude",
+                        "required": false,
+                        "type": "float"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "formData",
+                        "description": "longitude",
+                        "required": false,
+                        "type": "float"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/update/status/offline": {
+            "post": {
+                "tags": [
+                    "Offline"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Update Status",
+                "description": "Update Status",
+                "operationId": "UpdateStatus",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "status_id",
+                        "in": "formData",
+                        "description": "Status Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "task_id",
+                        "in": "formData",
+                        "description": "Task Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "Image",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "created_at",
+                        "in": "formData",
+                        "description": "created at",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/route/pickup/offline": {
+            "post": {
+                "tags": [
+                    "Offline"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey route pickup",
+                "description": "Joey route pickup",
+                "operationId": "JoeyRoutePickup",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id",
+                        "in": "formData",
+                        "description": "Tracking Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "created_at",
+                        "in": "formData",
+                        "description": "created at",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "formData",
+                        "description": "latitude",
+                        "required": false,
+                        "type": "float"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "formData",
+                        "description": "longitude",
+                        "required": false,
+                        "type": "float"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/task-confirmations/offline": {
+            "post": {
+                "tags": [
+                    "Offline"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Task Confirmation",
+                "description": "Task Confirmation",
+                "operationId": "TaskConfirmation",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "confirmation_num",
+                        "in": "formData",
+                        "description": "Confirmation Num",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "image/signature",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "pin",
+                        "in": "formData",
+                        "description": "pin",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "created_at",
+                        "in": "formData",
+                        "description": "created at",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/training/category": {
+            "get": {
+                "tags": [
+                    "Training"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Category Training",
+                "description": "Category Training",
+                "operationId": "CategoryTraining",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/rating-summary": {
+            "get": {
+                "tags": [
+                    "Home Page"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Rating",
+                "description": "Joey Rating",
+                "operationId": "JoeyRating",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/rating-overall": {
+            "get": {
+                "tags": [
+                    "Home Page"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Overall Rating",
+                "description": "Joey Overall Rating",
+                "operationId": "JoeyOverallRating",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/sendSMS": {
+            "post": {
+                "tags": [
+                    "Customer Send message"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Customer Send message",
+                "description": "Customer Send message",
+                "operationId": "CustomerSendMessage",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "message_id",
+                        "in": "formData",
+                        "description": "message Id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/getMessages": {
+            "get": {
+                "tags": [
+                    "Customer Send message"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Message List",
+                "description": "Message List",
+                "operationId": "Message List",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey/seen/basic/category": {
+            "get": {
+                "tags": [
+                    "Joey Seen Basic Category"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Seen Basic Category",
+                "description": "Joey Seen Basic Category",
+                "operationId": "JoeySeenBasicCategory",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/test/notification": {
+            "get": {
+                "tags": [
+                    "Joey Seen Basic Category"
+                ],
+                "summary": "Test Notification",
+                "description": "Test Notification",
+                "operationId": "TestNotification",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/order/image": {
+            "post": {
+                "tags": [
+                    "Order Image"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Order Image",
+                "description": "Order Image",
+                "operationId": "TrackingImage",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id",
+                        "in": "formData",
+                        "description": "tracking Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "image",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/trackingIds/bulk": {
+            "post": {
+                "tags": [
+                    "Bulk Tracking Ids"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Bulk Tracking Ids",
+                "description": "Bulk Tracking Ids",
+                "operationId": "BulkTrackingIds",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Tracking Ids",
+                        "in": "body",
+                        "description": "Multiple Tracking Ids",
+                        "required": false,
+                        "example": {
+                            "tracking_id": [
+                                {
+                                    "id": "........."
+                                },
+                                {
+                                    "id": "......."
+                                }
+                            ],
+                            "latitude": "",
+                            "longitude": ""
+                        },
+                        "schema": "",
+                        "type": "object"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/manifest/pickup": {
+            "post": {
+                "tags": [
+                    "Orders"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Manifest Pickup",
+                "description": "Manifest Pickup",
+                "operationId": "ManifestPickup",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "vendor_id",
+                        "in": "formData",
+                        "description": "vendor_id",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey_route_list": {
+            "get": {
+                "tags": [
+                    "Finance"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Route List",
+                "description": "Joey Route List",
+                "operationId": "JoeyRouteList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/mark-complete-route": {
+            "post": {
+                "tags": [
+                    "Finance"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Mark Complete Route",
+                "description": "Mark CompleteRoute",
+                "operationId": "MarkCompleteRoute",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "route_id",
+                        "in": "formData",
+                        "description": "Mark Complete Route",
+                        "placeholder": "164321,821241,052125,452015",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/joey-payout-report": {
+            "get": {
+                "tags": [
+                    "Finance"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Joey Route Detail",
+                "description": "Joey RouteDetail",
+                "operationId": "JoeyRouteDetail",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page",
+                        "required": false,
+                        "type": "integer",
+                        "default": 1
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit",
+                        "required": false,
+                        "type": "integer",
+                        "default": 10
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        }
+    }
+}

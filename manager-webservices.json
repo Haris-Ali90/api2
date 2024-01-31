@@ -1,0 +1,1208 @@
+{
+    "swagger": "3.0",
+    "info": {
+        "description": "LocalHost Manager WebServices",
+        "version": "1.0.0",
+        "title": "LocalHost",
+        "termsOfService": "",
+        "contact": {
+            "email": "abdul.basit@joeyco.com"
+        },
+        "license": {
+            "name": "JoeyCO",
+            "url": "https://www.joeyco.com/"
+        }
+    },
+    "host": "",
+    "basePath": "",
+    "tags": [
+        {
+            "name": "Auth",
+            "description": "Authorization Services"
+        },
+        {
+            "name": "Manager",
+            "description": "Manager"
+        },
+        {
+            "name": "Cities",
+            "description": "List"
+        },
+        {
+            "name": "Status And Reason",
+            "description": "List"
+        },
+        {
+            "name": "Sorting",
+            "description": "Sorting"
+        },
+        {
+            "name": "Routes",
+            "description": "Routes"
+        },
+        {
+            "name": "InBound OutBound",
+            "description": "InBound OutBound"
+        },
+        {
+            "name": "Statistics",
+            "description": "Statistic"
+        }
+    ],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "securityDefinitions": {
+        "Bearer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    },
+    "paths": {
+        "/login": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Auth login",
+                "description": "Manager Login",
+                "operationId": "ManagerLogin",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "password",
+                        "in": "formData",
+                        "description": "Password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_token",
+                        "in": "formData",
+                        "description": "Device Token",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_type",
+                        "in": "formData",
+                        "description": "Device Type (ios,android)",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+
+                }
+            }
+        },
+        "/auth/logout": {
+            "get": {
+                "tags": [
+                    "Auth"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Logout",
+                "description": "Logout Manager",
+                "operationId": "LogoutManager",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/forgot-password": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Manager Forgot Password",
+                "description": "Forgot Password",
+                "operationId": "ForgotPassword",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/manager/profile": {
+            "get": {
+                "tags": [
+                    "Manager"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Manager Account ",
+                "description": "Manager Account",
+                "operationId": "ManagerAccount",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/profile/update": {
+            "post": {
+                "tags": [
+                    "Manager"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Update Manager Profile",
+                "description": "Update Manager",
+                "operationId": "updateManager",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "full_name",
+                        "in": "formData",
+                        "description": "Full Name",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "phone",
+                        "in": "formData",
+                        "description": "Phone",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "profile_picture",
+                        "in": "formData",
+                        "description": "image",
+                        "required": false,
+                        "type": "string"
+                    }
+
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/change-password": {
+            "post": {
+                "tags": [
+                    "Manager"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Manager Change Password",
+                "description": "Change Password",
+                "operationId": "ChangePassword",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "current_password",
+                        "in": "formData",
+                        "description": "Current Password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "new_password",
+                        "in": "formData",
+                        "description": "New Password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "new_password_confirmation",
+                        "in": "formData",
+                        "description": "New Password Confirmation",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+
+        "/inbound": {
+            "post": {
+                "tags": [
+                    "InBound OutBound"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "InBound",
+                "description": "InBound",
+                "operationId": "InBound",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "hub_id",
+                        "in": "formData",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "date",
+                        "in": "formData",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "sorting_state and setup_state = 0 show both buttons start and end | sorting_state and setup_state = 1 show only end button | sorting_state and setup_state = 2 hide both buttons"
+                    }
+                }
+            }
+        },
+
+        "/route/sort": {
+            "post": {
+                "tags": [
+                    "InBound OutBound"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "TrackingSorting",
+                "description": "TrackingSorting",
+                "operationId": "TrackingSorting",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id",
+                        "in": "formData",
+                        "description": "Tracking Id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Tracking Ids"
+                    }
+                }
+            }
+        },
+        "/route/sort/first/avery": {
+            "post": {
+                "tags": [
+                    "Sorting"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "AverySorting",
+                "description": "AverySorting",
+                "operationId": "AverySorting",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id",
+                        "in": "formData",
+                        "description": "Tracking Id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Tracking Id"
+                    }
+                }
+            }
+        },
+        "/outbound": {
+            "post": {
+                "tags": [
+                    "InBound OutBound"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "OutBound",
+                "description": "OutBound",
+                "operationId": "OutBound",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "hub_id",
+                        "in": "formData",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "date",
+                        "in": "formData",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+
+        "/inbound_outbound_summary": {
+            "post": {
+                "tags": [
+                    "InBound OutBound"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "InBound OutBound Summary",
+                "description": "InBound OutBound Summary",
+                "operationId": "InBoundOutBoundSummary",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "hub_id",
+                        "in": "formData",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "date",
+                        "in": "formData",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+
+        "/inbound/sorting_time": {
+            "get": {
+                "tags": [
+                    "InBound OutBound"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "InBound Sorting Time",
+                "description": "InBound Sorting Time",
+                "operationId": "InBoundSortingTime",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "hub_id",
+                        "in": "query",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "date",
+                        "in": "query",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+
+        "/inbound/setup_time": {
+            "get": {
+                "tags": [
+                    "InBound OutBound"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "InBound Setup Time",
+                "description": "InBound Setup Time",
+                "operationId": "InBoundSetupTime",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "hub_id",
+                        "in": "query",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "date",
+                        "in": "query",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+
+        "/outbound/dispensing_time": {
+            "get": {
+                "tags": [
+                    "InBound OutBound"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "OutBound Dispensing Time",
+                "description": "OutBound Dispensing Time",
+                "operationId": "OutBoundDispensingTime",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "hub_id",
+                        "in": "query",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "date",
+                        "in": "query",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+
+        "/inbound/ware_house_sorter": {
+            "post": {
+                "tags": [
+                    "InBound OutBound"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "InBound Ware House Sorter",
+                "description": "InBound Ware House Sorter",
+                "operationId": "InBoundWareHouseSorter",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "hub_id",
+                        "in": "formData",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "date",
+                        "in": "formData",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "brooker_sorter_count",
+                        "in": "formData",
+                        "description": "Broker Sorter Count",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "internal_sorter_count",
+                        "in": "formData",
+                        "description": "Internal Sorter Count",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "manager_on_duty",
+                        "in": "formData",
+                        "description": "Manager On Duty",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+
+        "/outbound/ware_house_sorter": {
+            "post": {
+                "tags": [
+                    "InBound OutBound"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "OutBound Ware House Sorter",
+                "description": "OutBound Ware House Sorter",
+                "operationId": "OutBoundWareHouseSorter",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "hub_id",
+                        "in": "formData",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "date",
+                        "in": "formData",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "dispensed_route",
+                        "in": "formData",
+                        "description": "Dispensed Route",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "manager_on_duty",
+                        "in": "formData",
+                        "description": "Manager On Duty",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+
+        "/hub/cities": {
+            "get": {
+                "tags": [
+                    "Cities"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Cities",
+                "description": "Cities",
+                "operationId": "Cities",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/status_reasons/list": {
+            "get": {
+                "tags": [
+                    "Status And Reason"
+                ],
+                "security": [
+                    {
+
+                        "Bearer": []
+                    }
+                ],
+                "summary": "List",
+                "description": "Status And Reason List",
+                "operationId": "List",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+
+        "/tracking-detail": {
+            "get": {
+                "tags": [
+                    "Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Tracking Detail",
+                "description": "Tracking Detail",
+                "operationId": "TrackingDetail",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "tracking_id",
+                        "in": "query",
+                        "description": "Tracking Id",
+                        "required": true,
+                        "type": "string"
+                    }
+
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/route-info": {
+            "get": {
+                "tags": [
+                    "Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Route Info",
+                "description": "Route Info",
+                "operationId": "RouteInfo",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "date",
+                        "in": "query",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "hub_id",
+                        "in": "query",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "route_id",
+                        "in": "query",
+                        "description": "Route Id",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "joey_id",
+                        "in": "query",
+                        "description": "Joey Id",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "broker_id",
+                        "in": "query",
+                        "description": "Broker Id",
+                        "required": false,
+                        "type": "integer"
+                    }
+
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/route-detail": {
+            "get": {
+                "tags": [
+                    "Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Route Detail",
+                "description": "Route Detail",
+                "operationId": "RouteDetail",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "route_id",
+                        "in": "query",
+                        "description": "Route Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hub_id",
+                        "in": "query",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "tracking_id",
+                        "in": "query",
+                        "description": "Tracking Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "ordinal",
+                        "in": "query",
+                        "description": "Ordinal",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "status_id",
+                        "in": "query",
+                        "description": "status_id",
+                        "required": false,
+                        "type": "integer"
+                    }
+
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/order-detail": {
+            "get": {
+                "tags": [
+                    "Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Order Detail",
+                "description": "Order Detail",
+                "operationId": "OrderDetail",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "sprint_id",
+                        "in": "query",
+                        "description": "Sprint Id",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+
+        "/update/status/manager": {
+            "post": {
+                "tags": [
+                    "Routes"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Update Status",
+                "description": "Update Status",
+                "operationId": "UpdateStatus",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "status_id",
+                        "in": "formData",
+                        "description": "Status Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "reason_id",
+                        "in": "formData",
+                        "description": "Reason Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "sprint_id",
+                        "in": "formData",
+                        "description": "Sprint Id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "image",
+                        "required": true,
+                        "type": "string"
+                    }
+
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+
+        "/hub-otd": {
+            "post": {
+                "tags": [
+                    "Statistics"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "OTD",
+                "description": "OTD",
+                "operationId": "OTD",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "date",
+                        "in": "formData",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "hub_id",
+                        "in": "formData",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "Type : (day, week, month, six_month)",
+                        "required": true,
+                        "type": "string"
+                    }
+
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/hub-all_counts": {
+            "post": {
+                "tags": [
+                    "Statistics"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "All Counts",
+                "description": "All Counts",
+                "operationId": "AllCounts",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "date",
+                        "in": "formData",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "hub_id",
+                        "in": "formData",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    }
+
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/hub-failedOrder_counts": {
+            "post": {
+                "tags": [
+                    "Statistics"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Failed Order Counts",
+                "description": "Failed Order Counts",
+                "operationId": "FailedCounts",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "date",
+                        "in": "formData",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "hub_id",
+                        "in": "formData",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    }
+
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/hub-customOrder_counts": {
+            "post": {
+                "tags": [
+                    "Statistics"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Custom Order Counts",
+                "description": "Custom Order Counts",
+                "operationId": "CustomOrderCounts",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "date",
+                        "in": "formData",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "hub_id",
+                        "in": "formData",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    }
+
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/hub-routeOrder_counts": {
+            "post": {
+                "tags": [
+                    "Statistics"
+                ],
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "summary": "Route Order Counts",
+                "description": "Route Order Counts",
+                "operationId": "RouteOrderCounts",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "date",
+                        "in": "formData",
+                        "description": "Date(yyyy-mm-dd)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "hub_id",
+                        "in": "formData",
+                        "description": "Hub Id",
+                        "required": true,
+                        "type": "integer"
+                    }
+
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        }
+    }
+}

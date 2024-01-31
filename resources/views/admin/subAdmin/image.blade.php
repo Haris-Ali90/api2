@@ -1,0 +1,1 @@
+    <img class="img-thumbnail"  onClick="preview(this);"  src="{{$record->profile_picture}}"/>

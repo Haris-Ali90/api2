@@ -1,0 +1,491 @@
+/*
+!*
+@ author = Adnan
+@ author email = adnannadeem1994@gmail.com
+@ custom joeyco css
+@ dashboard color codes
+---------------------------
+theme main green = #bbd82b;
+theme light green = #bbd82b;
+theme dark green = #87a200;
+theme main orange = #e36d29;
+theme main orange = #f1884c;
+*!
+
+.navbar-brand
+{
+    display: none;
+}
+
+.sidebar-logo-wrap .small-logo
+{
+    display: none;
+}
+
+.page-sidebar-closed .small-logo{
+    display: block;
+}
+
+.page-sidebar-closed .main-logo{
+    display: none;
+}
+
+.page-sidebar
+{
+    position: relative;
+    bottom: 42px;
+    z-index: 9999;
+    padding-top: 10px !important;
+}
+
+body .header.navbar.navbar-fixed-top {
+    background-color: #bbd82b !important;
+}
+
+ul.page-sidebar-menu > li.active > a {
+    background: #e36d29 !important;
+    border-top-color: transparent !important;
+    color: #ffffff;
+}
+.header.navbar .navbar-nav > li.dropdown.user .dropdown-toggle .username {
+    color: #fff;
+}
+
+.portlet.box.blue > .portlet-title
+{
+    background-color: #bbd82b;
+}
+
+
+.btn.orange:hover, .btn.orange:focus, .btn.orange:active, .btn.orange.active, .btn.orange[disabled], .btn.orange.disabled {
+    background-color: #e36d29 !important;
+    color: #fff !important;
+    outline: none !important;
+}
+.btn.orange
+{
+    color: white;
+    text-shadow: none;
+    background-color: #f1884c;
+
+}
+
+!*dashboard cart box css*!
+.dashboard-cart-box-one
+{
+    position: relative;
+}
+
+.dashboard-stat.dashboard-cart-box-one .details
+{
+    position: relative !important;
+    left: 0px;
+    width: 100%;
+    padding: 0px 75px 20px 15px;
+}
+
+.dashboard-stat.dashboard-cart-box-one .details .number
+{
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard-stat.dashboard-cart-box-one .details .number, .dashboard-stat.dashboard-cart-box-one .details .desc{
+    text-align: left;
+    font-weight: 400;
+}
+
+.dashboard-stat.dashboard-cart-box-one .visual
+{
+    position: absolute;
+    right:0px;
+    top:0px;
+}
+
+.dashboard-cart-box-one.green
+{
+    background-color:#bbd82b ;
+}
+.dashboard-cart-box-one.green .more
+{
+    background-color:#87a200 ;
+}
+.dashboard-cart-box-one.green .visual .fa
+{
+    color: #e36d29;
+}
+
+.dashboard-cart-box-one .visual .fa:hover
+{ cursor: pointer;
+    color: #e36d29;
+    color: #fff;
+}
+
+
+
+!*mobile screen css*!
+
+@media only screen and (max-width: 991px) {
+
+    .navbar-brand {
+        display: block;
+    }
+
+    .page-sidebar
+    {
+        position: relative;
+        bottom: 0px;
+        z-index: auto;
+        padding-top: 10px !important;
+    }
+
+    .navbar-brand .main-logo
+    {
+        max-height: 100%;
+        margin:0px;
+    }
+
+    .sidebar-logo-wrap img
+    {
+        display: none;
+    }
+
+
+}
+
+
+
+*/
+/*
+@ author = Adnan
+@ author email = adnannadeem1994@gmail.com
+@ custom joeyco css
+@ dashboard color codes
+---------------------------
+theme main green = #bbd82b;
+theme light green = #bbd82b;
+theme dark green = #87a200;
+theme main orange = #e36d29;
+theme main orange = #f1884c;
+*/
+
+/*helper function*/
+.mt-27
+{
+    margin-top: 27px;
+}
+
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+    padding: 15px 10px;
+}
+
+.navbar-brand
+{
+    display: none;
+}
+
+.sidebar-logo-wrap .small-logo
+{
+    display: none;
+}
+
+.page-sidebar-closed .small-logo{
+    display: block;
+}
+
+.page-sidebar-closed .main-logo{
+    display: none;
+}
+
+.page-sidebar
+{
+    position: relative;
+    bottom: 42px;
+    z-index: 9999;
+    padding-top: 10px !important;
+}
+
+body .header.navbar.navbar-fixed-top {
+    background-color: #bbd82b !important;
+}
+
+ul.page-sidebar-menu > li.active > a {
+    background: #e36d29 !important;
+    border-top-color: transparent !important;
+    color: #ffffff;
+}
+.header.navbar .navbar-nav > li.dropdown.user .dropdown-toggle .username {
+    color: #fff;
+}
+
+.portlet.box.blue > .portlet-title
+{
+    background-color: #bbd82b;
+}
+
+
+.btn.orange:hover, .btn.orange:focus, .btn.orange:active, .btn.orange.active, .btn.orange[disabled], .btn.orange.disabled {
+    background-color: #e36d29 !important;
+    color: #fff !important;
+    outline: none !important;
+}
+.btn.orange
+{
+    color: white;
+    text-shadow: none;
+    background-color: #f1884c;
+
+}
+
+/*dashboard cart box css*/
+.dashboard-cart-box-one
+{
+    position: relative;
+}
+
+.dashboard-stat.dashboard-cart-box-one .details
+{
+    position: relative !important;
+    left: 0px;
+    width: 100%;
+    padding: 0px 75px 20px 15px;
+}
+
+.dashboard-stat.dashboard-cart-box-one .details .number
+{
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard-stat.dashboard-cart-box-one .details .number, .dashboard-stat.dashboard-cart-box-one .details .desc{
+    text-align: left;
+    font-weight: 400;
+}
+
+.dashboard-stat.dashboard-cart-box-one .visual
+{
+    position: absolute;
+    right:0px;
+    top:0px;
+}
+
+.dashboard-cart-box-one.green
+{
+    background-color:#bbd82b ;
+}
+.dashboard-cart-box-one.green .more
+{
+    background-color:#87a200 ;
+}
+.dashboard-cart-box-one.green .visual .fa
+{
+    color: #e36d29;
+}
+
+.dashboard-cart-box-one .visual .fa:hover
+{   cursor: pointer;
+    color: #e36d29;
+    color: #fff;
+}
+
+/*form css open*/
+.row.from-input-wraper {
+    margin: 0px;
+}
+.from-input-col .form-group {
+    margin-left: 0pc;
+    margin-right: 0px;
+}
+.from-input-wraper .section-heading {
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px 0px 20px 0px;
+    background-color: #bbd82b;
+    color: #fff;
+}
+
+
+/*dashboard details page css*/
+.detail-box-wrap .detail-box-from-group
+{
+    padding: 10px 0px;
+}
+.detail-box-wrap .detail-box-from-group .detail-box {
+    padding-top: 7px;
+}
+
+/*data table top from css*/
+.table-top-form-row {
+    padding: 20px 0px;
+}
+.table-top-form-from .control-label {
+    padding-bottom: 5px;
+}
+
+.table-top-form-row  .from-submit-btn {
+    margin-top: 32px;
+}
+
+/*datatable css override*/
+.dataTables_wrapper input[type="search"]
+{
+    font-weight: normal;
+    color: #333333;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    line-height: normal;
+    height: 28px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+    text-align: right;
+    padding-top: 0.25em;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active, .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    color: #999;
+    background-color: #fff;
+    border-color: #ddd;
+    cursor: not-allowed;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current
+{
+    cursor: default;
+}
+
+.dataTables_wrapper .dataTables_paginate a.paginate_button{
+    cursor: pointer;
+    position: relative;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #428bca;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+}
+.dataTables_wrapper .dataTables_paginate .ellipsis{
+    cursor: not-allowed;
+    position: relative;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #428bca;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+}
+.dt-buttons button {
+    border: none;
+    color: white;
+    text-shadow: none;
+    background-color: #bbd82b;
+    border-width: 0;
+    padding: 7px 14px;
+    font-size: 14px;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    text-shadow: none;
+}
+.dt-buttons button:hover
+{
+    background-color:#abce00 ;
+}
+.dt-button-collection div[role="menu"]
+{
+    margin-top: 25px;
+}
+.dt-button-collection div[role="menu"] button
+{
+    display: inline-block;
+}
+
+
+/*details page css  open*/
+
+.details-page-main-container .details-page-wrap
+{
+    margin-left:0px;
+    margin-right:0px;
+
+}
+
+.details-page-main-container .show-title
+{
+    background-color: #3d3d3d;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+.details-page-main-container .show-title h4
+{
+    margin: 0px;
+    color: #fff;
+}
+.details-page-main-container .show-details-lable {
+    font-weight: 600;
+}
+
+.details-page-main-container .show-details-para {
+    font-size: 12px;
+    border-bottom: 1px dashed #b9b9b9;
+    padding-bottom: 10px;
+}
+
+.details-page-main-container .show-details-box .table-responsive
+{
+    padding: 0px;
+    border: none;
+}
+
+/*details page css  close*/
+
+
+/*mobile screen css*/
+
+@media only screen and (max-width: 991px)
+{
+
+    .navbar-brand {
+        display: block;
+    }
+
+    .page-sidebar
+    {
+        position: relative;
+        bottom: 0px;
+        z-index: auto;
+        padding-top: 10px !important;
+    }
+
+    .navbar-brand .main-logo
+    {
+        max-height: 100%;
+        margin:0px;
+    }
+
+    .sidebar-logo-wrap img
+    {
+        display: none;
+    }
+
+
+}
